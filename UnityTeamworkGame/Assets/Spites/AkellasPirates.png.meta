@@ -1,0 +1,2425 @@
+fileFormatVersion: 2
+guid: f204f538eefec86408282b1e69c5883a
+timeCreated: 1475659308
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AkellasPirates_0
+    21300002: AkellasPirates_1
+    21300004: AkellasPirates_2
+    21300006: AkellasPirates_3
+    21300008: AkellasPirates_4
+    21300010: AkellasPirates_5
+    21300012: AkellasPirates_6
+    21300014: AkellasPirates_7
+    21300016: AkellasPirates_8
+    21300018: AkellasPirates_9
+    21300020: AkellasPirates_10
+    21300022: AkellasPirates_11
+    21300024: AkellasPirates_12
+    21300026: AkellasPirates_13
+    21300028: AkellasPirates_14
+    21300030: AkellasPirates_15
+    21300032: AkellasPirates_16
+    21300034: AkellasPirates_17
+    21300036: AkellasPirates_18
+    21300038: AkellasPirates_19
+    21300040: AkellasPirates_20
+    21300042: AkellasPirates_21
+    21300044: AkellasPirates_22
+    21300046: AkellasPirates_23
+    21300048: AkellasPirates_24
+    21300050: AkellasPirates_25
+    21300052: AkellasPirates_26
+    21300054: AkellasPirates_27
+    21300056: AkellasPirates_28
+    21300058: AkellasPirates_29
+    21300060: AkellasPirates_30
+    21300062: AkellasPirates_31
+    21300064: AkellasPirates_32
+    21300066: AkellasPirates_33
+    21300068: AkellasPirates_34
+    21300070: AkellasPirates_35
+    21300072: AkellasPirates_36
+    21300074: AkellasPirates_37
+    21300076: AkellasPirates_38
+    21300078: AkellasPirates_39
+    21300080: AkellasPirates_40
+    21300082: AkellasPirates_41
+    21300084: AkellasPirates_42
+    21300086: AkellasPirates_43
+    21300088: AkellasPirates_44
+    21300090: AkellasPirates_45
+    21300092: AkellasPirates_46
+    21300094: AkellasPirates_47
+    21300096: AkellasPirates_48
+    21300098: AkellasPirates_49
+    21300100: AkellasPirates_50
+    21300102: AkellasPirates_51
+    21300104: AkellasPirates_52
+    21300106: AkellasPirates_53
+    21300108: AkellasPirates_54
+    21300110: AkellasPirates_55
+    21300112: AkellasPirates_56
+    21300114: AkellasPirates_57
+    21300116: AkellasPirates_58
+    21300118: AkellasPirates_59
+    21300120: AkellasPirates_60
+    21300122: AkellasPirates_61
+    21300124: AkellasPirates_62
+    21300126: AkellasPirates_63
+    21300128: AkellasPirates_64
+    21300130: AkellasPirates_65
+    21300132: AkellasPirates_66
+    21300134: AkellasPirates_67
+    21300136: AkellasPirates_68
+    21300138: AkellasPirates_69
+    21300140: AkellasPirates_70
+    21300142: AkellasPirates_71
+    21300144: AkellasPirates_72
+    21300146: AkellasPirates_73
+    21300148: AkellasPirates_74
+    21300150: AkellasPirates_75
+    21300152: AkellasPirates_76
+    21300154: AkellasPirates_77
+    21300156: AkellasPirates_78
+    21300158: AkellasPirates_79
+    21300160: AkellasPirates_80
+    21300162: AkellasPirates_81
+    21300164: AkellasPirates_82
+    21300166: AkellasPirates_83
+    21300168: AkellasPirates_84
+    21300170: AkellasPirates_85
+    21300172: AkellasPirates_86
+    21300174: AkellasPirates_87
+    21300176: AkellasPirates_88
+    21300178: AkellasPirates_89
+    21300180: AkellasPirates_90
+    21300182: AkellasPirates_91
+    21300184: AkellasPirates_92
+    21300186: AkellasPirates_93
+    21300188: AkellasPirates_94
+    21300190: AkellasPirates_95
+    21300192: AkellasPirates_96
+    21300194: AkellasPirates_97
+    21300196: AkellasPirates_98
+    21300198: AkellasPirates_99
+    21300200: AkellasPirates_100
+    21300202: AkellasPirates_101
+    21300204: AkellasPirates_102
+    21300206: AkellasPirates_103
+    21300208: AkellasPirates_104
+    21300210: AkellasPirates_105
+    21300212: AkellasPirates_106
+    21300214: AkellasPirates_107
+    21300216: AkellasPirates_108
+    21300218: AkellasPirates_109
+    21300220: AkellasPirates_110
+    21300222: AkellasPirates_111
+    21300224: AkellasPirates_112
+    21300226: AkellasPirates_113
+    21300228: AkellasPirates_114
+    21300230: AkellasPirates_115
+    21300232: AkellasPirates_116
+    21300234: AkellasPirates_117
+    21300236: AkellasPirates_118
+    21300238: AkellasPirates_119
+    21300240: AkellasPirates_120
+    21300242: AkellasPirates_121
+    21300244: AkellasPirates_122
+    21300246: AkellasPirates_123
+    21300248: AkellasPirates_124
+    21300250: AkellasPirates_125
+    21300252: AkellasPirates_126
+    21300254: AkellasPirates_127
+    21300256: AkellasPirates_128
+    21300258: AkellasPirates_129
+    21300260: AkellasPirates_130
+    21300262: AkellasPirates_131
+    21300264: AkellasPirates_132
+    21300266: AkellasPirates_133
+    21300268: AkellasPirates_134
+    21300270: AkellasPirates_135
+    21300272: AkellasPirates_136
+    21300274: AkellasPirates_137
+    21300276: AkellasPirates_138
+    21300278: AkellasPirates_139
+    21300280: AkellasPirates_140
+    21300282: AkellasPirates_141
+    21300284: AkellasPirates_142
+    21300286: AkellasPirates_143
+    21300288: AkellasPirates_144
+    21300290: AkellasPirates_145
+    21300292: AkellasPirates_146
+    21300294: AkellasPirates_147
+    21300296: AkellasPirates_148
+    21300298: AkellasPirates_149
+    21300300: AkellasPirates_150
+    21300302: AkellasPirates_151
+    21300304: AkellasPirates_152
+    21300306: AkellasPirates_153
+    21300308: AkellasPirates_154
+    21300310: AkellasPirates_155
+    21300312: AkellasPirates_156
+    21300314: AkellasPirates_157
+    21300316: AkellasPirates_158
+    21300318: AkellasPirates_159
+    21300320: AkellasPirates_160
+    21300322: AkellasPirates_161
+    21300324: AkellasPirates_162
+    21300326: AkellasPirates_163
+    21300328: AkellasPirates_164
+    21300330: AkellasPirates_165
+    21300332: AkellasPirates_166
+    21300334: AkellasPirates_167
+    21300336: AkellasPirates_168
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AkellasPirates_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 460
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 430
+        width: 15
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 460
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 460
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 460
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 430
+        width: 15
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 460
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 458
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 458
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 430
+        width: 11
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 458
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_12
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 458
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_13
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 458
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_14
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 458
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_15
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 458
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 430
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 430
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 430
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 430
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_21
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 430
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_22
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 430
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_23
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 430
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_24
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 430
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_25
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 430
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_26
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 430
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_27
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 430
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_28
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 430
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 394
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_30
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 394
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_31
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 394
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_32
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 394
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_33
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 394
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_34
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 394
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_35
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 394
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_36
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 394
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_37
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 391
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_38
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 391
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_39
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 391
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_40
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 391
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_41
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 391
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_42
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 391
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_43
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 391
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_44
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 391
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_46
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 365
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_47
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 365
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_48
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 365
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_49
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 365
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_50
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 365
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_51
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 365
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_52
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 365
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_53
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 365
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_54
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 365
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_55
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 365
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_56
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 365
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_57
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 365
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_58
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 365
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_59
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 365
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_60
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 365
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_62
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 333
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_63
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 333
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_64
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 333
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_65
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 333
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_66
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 333
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 310
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_68
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 333
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_69
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 330
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_70
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 310
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_71
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 330
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_72
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 310
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_73
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 330
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_74
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 330
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 310
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_76
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 330
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_77
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 310
+        width: 196
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_79
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 310
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_80
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 310
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_81
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 310
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_82
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 310
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_83
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 310
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_84
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 310
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_85
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 310
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_86
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 310
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_87
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 310
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_88
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 310
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_89
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 310
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_91
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 265
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_92
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 265
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_93
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 266
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 265
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_95
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 266
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_96
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 265
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_97
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 266
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_98
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 267
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 266
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_100
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 265
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_101
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 265
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_102
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 265
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_103
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 265
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_104
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 265
+        width: 224
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_106
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 247
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_107
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 234
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_108
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 236
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_109
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 243
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_110
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 227
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_111
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 243
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_112
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 227
+        width: 11
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_113
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 230
+        width: 217
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_114
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 237
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_115
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 237
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_116
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 211
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_117
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 211
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_118
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_119
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 219
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_120
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 220
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_121
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 220
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_122
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 195
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_123
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 195
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_124
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 195
+        width: 182
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_126
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 196
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_127
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 208
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_128
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 209
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_129
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 195
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_130
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 195
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_131
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 198
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_132
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 199
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_133
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 199
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_134
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 204
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_135
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 198
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_136
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 160
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_137
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 160
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_139
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 146
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_140
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 146
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_141
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 100
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_142
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 146
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_143
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 146
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_144
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 146
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_145
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 146
+        width: 13
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_146
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 160
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_147
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 100
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_148
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 100
+        width: 13
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_149
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 100
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_150
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 100
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_151
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 100
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_152
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 100
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_153
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 100
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_154
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 80
+        width: 120
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_155
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_156
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 46
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_157
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_158
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 42
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_159
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 46
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_160
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 46
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_161
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 46
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_162
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 46
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_163
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 120
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_164
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_165
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_166
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_167
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_168
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
