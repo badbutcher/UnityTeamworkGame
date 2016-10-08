@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UnityTeamworkGame.Interfaces
+namespace UnityTeamworkGame.CS_Interfaces
 {
     interface IDestroyable
     {

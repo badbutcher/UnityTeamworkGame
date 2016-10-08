@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityTeamworkGame;
-using UnityTeamworkGame.Enums;
-using UnityTeamworkGame.Interfaces;
+using UnityTeamworkGame.CS_Enums;
+using UnityTeamworkGame.CS_Interfaces;
 
-namespace UnityTeamworkGame.Ships
+namespace UnityTeamworkGame.CS_Ships
 {
     public abstract class Ship : IDestroyable
     {

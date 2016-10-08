@@ -66,10 +66,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Test.cs" />
-    <Compile Include="Enums\Enum.cs" />
-    <Compile Include="Interfaces\IDestroyable.cs" />
-    <Compile Include="Ships\Projectile.cs" />
-    <Compile Include="Ships\Ship.cs" />
+    <Compile Include="CS_Enums\Enum.cs" />
+    <Compile Include="CS_Interfaces\IDestroyable.cs" />
+    <Compile Include="CS_MapObjects\LandObject.cs" />
+    <Compile Include="CS_MapObjects\MapObject.cs" />
+    <Compile Include="CS_MapObjects\SeaObject.cs" />
+    <Compile Include="CS_MapObjects\Settlement.cs" />
+    <Compile Include="CS_Ships\PlayerShip.cs" />
+    <Compile Include="CS_Ships\Projectile.cs" />
+    <Compile Include="CS_Ships\Ship.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
