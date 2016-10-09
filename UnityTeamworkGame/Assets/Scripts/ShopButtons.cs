@@ -13,44 +13,60 @@ public class ShopButtons : MonoBehaviour
     public GameObject RepairShipPanel;
     public GameObject ExitShop;
 
-
-    void Update()
+    private void Start()
     {
-        //EventSystem.current.currentSelectedGameObject.name;
-
+        this.Reset();
     }
+
     public void ShowWeapons()
     {
-        WeaponsPanel.SetActive(true);
+        this.Reset();
+        this.WeaponsPanel.SetActive(true);
     }
 
     public void ShowSupplies()
     {
-        SuppliesPanel.SetActive(true);
+        this.Reset();
+        this.SuppliesPanel.SetActive(true);
     }
 
     public void ShowUpgrades()
     {
-        UpgradesPanel.SetActive(true);
+        this.Reset();
+        this.UpgradesPanel.SetActive(true);
     }
 
     public void ShowPotions()
     {
-        PotionsPanel.SetActive(true);
+        this.Reset();
+        this.PotionsPanel.SetActive(true);
     }
 
     public void ShowInn()
     {
-        InnPanel.SetActive(true);
+        this.Reset();
+        this.InnPanel.SetActive(true);
     }
 
     public void ShowRepairShip()
     {
-        RepairShipPanel.SetActive(true);
+        this.Reset();
+        this.RepairShipPanel.SetActive(true);
     }
 
     public void Exit()
     {
-        ExitShop.SetActive(false);
+        this.Reset();
+        this.ExitShop.SetActive(false);
+    }
+
+    private void Reset()
+    {
+        this.WeaponsPanel.SetActive(false);
+        this.SuppliesPanel.SetActive(false);
+        this.UpgradesPanel.SetActive(false);
+        this.PotionsPanel.SetActive(false);
+        this.InnPanel.SetActive(false);
+        this.RepairShipPanel.SetActive(false);
     }
 }

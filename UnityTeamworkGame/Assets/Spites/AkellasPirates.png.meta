@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f204f538eefec86408282b1e69c5883a
-timeCreated: 1475659308
+timeCreated: 1476039747
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -253,19 +253,6 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AkellasPirates_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 430
-        width: 15
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: AkellasPirates_3
       rect:
         serializedVersion: 2
@@ -299,19 +286,6 @@ TextureImporter:
         y: 460
         width: 25
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: AkellasPirates_6
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 430
-        width: 15
-        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2418,6 +2392,32 @@ TextureImporter:
         y: 0
         width: 45
         height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 459
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AkellasPirates_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 460
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
