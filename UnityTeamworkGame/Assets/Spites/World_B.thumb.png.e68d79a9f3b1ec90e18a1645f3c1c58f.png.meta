@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b273b67336a38254b8ae1e5f6c99fa65
-timeCreated: 1475845494
+timeCreated: 1476027114
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,17 @@ TextureImporter:
     21300010: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_5
     21300012: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_6
     21300014: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_7
+    21300016: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_8
+    21300018: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_9
+    21300020: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_10
+    21300022: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_11
+    21300024: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_12
+    21300026: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_13
+    21300028: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_14
+    21300030: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_15
+    21300032: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_16
+    21300034: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_17
+    21300036: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,7 +67,12 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,8 +145,8 @@ TextureImporter:
       name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_5
       rect:
         serializedVersion: 2
-        x: 185
-        y: 705
+        x: 186
+        y: 703
         width: 48
         height: 45
       alignment: 0
@@ -159,6 +175,149 @@ TextureImporter:
         y: 655
         width: 47
         height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_8
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 518
+        width: 93
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 421
+        width: 92
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 469
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 656
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_12
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 46
+        width: 95
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_13
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 47
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_14
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 0
+        width: 94
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 656
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 658
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_17
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 517
+        width: 95
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_18
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 422
+        width: 94
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
