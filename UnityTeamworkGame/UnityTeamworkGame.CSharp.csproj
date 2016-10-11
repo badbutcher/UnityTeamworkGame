@@ -72,6 +72,8 @@
     <Compile Include="Assets\CS_Ships\PlayerShip.cs" />
     <Compile Include="Assets\CS_Ships\Projectile.cs" />
     <Compile Include="Assets\CS_Ships\Ship.cs" />
+    <Compile Include="Assets\Scripts\MainMenuButtons.cs" />
+    <Compile Include="Assets\Scripts\MainMenuParallaxScrolling.cs" />
     <Compile Include="Assets\Scripts\ShipMove.cs" />
     <Compile Include="Assets\Scripts\ShopButtons.cs" />
     <Compile Include="Assets\Test.cs" />
