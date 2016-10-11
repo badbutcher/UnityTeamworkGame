@@ -1,38 +1,38 @@
 fileFormatVersion: 2
 guid: 7669ba7ebbfd1894ab3ca221ec936c52
-timeCreated: 1476023601
+timeCreated: 1476200743
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 1b91d067c3899aff587e9e59d6bc3f7c 1_0
-    21300002: 1b91d067c3899aff587e9e59d6bc3f7c 1_1
-    21300004: 1b91d067c3899aff587e9e59d6bc3f7c 1_2
-    21300006: 1b91d067c3899aff587e9e59d6bc3f7c 1_3
-    21300008: 1b91d067c3899aff587e9e59d6bc3f7c 1_4
-    21300010: 1b91d067c3899aff587e9e59d6bc3f7c 1_5
-    21300012: 1b91d067c3899aff587e9e59d6bc3f7c 1_6
-    21300014: 1b91d067c3899aff587e9e59d6bc3f7c 1_7
-    21300016: 1b91d067c3899aff587e9e59d6bc3f7c 1_8
-    21300018: 1b91d067c3899aff587e9e59d6bc3f7c 1_9
-    21300020: 1b91d067c3899aff587e9e59d6bc3f7c 1_10
-    21300022: 1b91d067c3899aff587e9e59d6bc3f7c 1_11
-    21300024: 1b91d067c3899aff587e9e59d6bc3f7c 1_12
-    21300026: SpriteSheet_0
-    21300028: SpriteSheet_1
-    21300030: SpriteSheet_2
-    21300032: SpriteSheet_3
-    21300034: SpriteSheet_4
-    21300036: SpriteSheet_5
-    21300038: SpriteSheet_6
-    21300040: SpriteSheet_7
-    21300042: SpriteSheet_8
-    21300044: SpriteSheet_9
-    21300046: SpriteSheet_10
-    21300048: SpriteSheet_11
-    21300050: SpriteSheet_12
-    21300052: SpriteSheet_13
-    21300054: SpriteSheet_14
-    21300056: SpriteSheet_15
+    21300000: Stonehenge
+    21300002: Lighthouse1
+    21300004: SnowTown1
+    21300006: Lighthouse2
+    21300008: BushBig
+    21300010: Rock2
+    21300012: Rock3
+    21300014: Rock1
+    21300016: Flower1
+    21300018: Flower4
+    21300020: Flower6
+    21300022: Flower5
+    21300024: WoodenDock2
+    21300026: Town1
+    21300028: WoodenDock3
+    21300030: Town2
+    21300032: Town8
+    21300034: Town7
+    21300036: Town3
+    21300038: House1
+    21300040: House2
+    21300042: Town4
+    21300044: Town5
+    21300046: Town6
+    21300048: WoodenDock1
+    21300050: Flower3
+    21300052: Flower2
+    21300054: GraveStone1
+    21300056: TownSign
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -82,7 +82,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_0
+      name: Stonehenge
       rect:
         serializedVersion: 2
         x: 260
@@ -95,7 +95,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_1
+      name: Lighthouse1
       rect:
         serializedVersion: 2
         x: 259
@@ -108,7 +108,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_2
+      name: SnowTown1
       rect:
         serializedVersion: 2
         x: 316
@@ -121,7 +121,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_3
+      name: Lighthouse2
       rect:
         serializedVersion: 2
         x: 289
@@ -134,7 +134,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_4
+      name: BushBig
       rect:
         serializedVersion: 2
         x: 192
@@ -147,7 +147,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_5
+      name: Rock2
       rect:
         serializedVersion: 2
         x: 192
@@ -160,7 +160,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_6
+      name: Rock3
       rect:
         serializedVersion: 2
         x: 223
@@ -173,7 +173,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_7
+      name: Rock1
       rect:
         serializedVersion: 2
         x: 163
@@ -186,7 +186,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_8
+      name: Flower1
       rect:
         serializedVersion: 2
         x: 93
@@ -199,7 +199,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_9
+      name: Flower4
       rect:
         serializedVersion: 2
         x: 96
@@ -212,7 +212,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_10
+      name: Flower6
       rect:
         serializedVersion: 2
         x: 35
@@ -225,7 +225,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_11
+      name: Flower5
       rect:
         serializedVersion: 2
         x: 62
@@ -238,7 +238,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 1b91d067c3899aff587e9e59d6bc3f7c 1_12
+      name: WoodenDock2
       rect:
         serializedVersion: 2
         x: 32
@@ -251,7 +251,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_0
+      name: Town1
       rect:
         serializedVersion: 2
         x: 255
@@ -264,7 +264,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_1
+      name: WoodenDock3
       rect:
         serializedVersion: 2
         x: 160
@@ -277,7 +277,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_2
+      name: Town2
       rect:
         serializedVersion: 2
         x: 352
@@ -290,7 +290,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_3
+      name: Town8
       rect:
         serializedVersion: 2
         x: 255
@@ -303,7 +303,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_4
+      name: Town7
       rect:
         serializedVersion: 2
         x: 447
@@ -316,7 +316,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_5
+      name: Town3
       rect:
         serializedVersion: 2
         x: 449
@@ -329,7 +329,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_6
+      name: House1
       rect:
         serializedVersion: 2
         x: 483
@@ -342,7 +342,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_7
+      name: House2
       rect:
         serializedVersion: 2
         x: 484
@@ -355,7 +355,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_8
+      name: Town4
       rect:
         serializedVersion: 2
         x: 256
@@ -368,7 +368,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_9
+      name: Town5
       rect:
         serializedVersion: 2
         x: 323
@@ -381,7 +381,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_10
+      name: Town6
       rect:
         serializedVersion: 2
         x: 387
@@ -394,7 +394,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_11
+      name: WoodenDock1
       rect:
         serializedVersion: 2
         x: 0
@@ -407,7 +407,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_12
+      name: Flower3
       rect:
         serializedVersion: 2
         x: 35
@@ -420,7 +420,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_13
+      name: Flower2
       rect:
         serializedVersion: 2
         x: 67
@@ -433,7 +433,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_14
+      name: GraveStone1
       rect:
         serializedVersion: 2
         x: 225
@@ -446,7 +446,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheet_15
+      name: TownSign
       rect:
         serializedVersion: 2
         x: 34
