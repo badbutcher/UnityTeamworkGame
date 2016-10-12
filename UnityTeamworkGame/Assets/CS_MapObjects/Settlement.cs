@@ -14,12 +14,12 @@ namespace UnityTeamworkGame.CS_MapObjects
         private List<PlayerShip> shipsOnDock = new List<PlayerShip>(); // this field remains hidden as it will be used only within methods of the class       
 
         // constructors
-        protected Settlement(int x, int y)
-            : this(1, 0, 1, x, y)
+        protected Settlement(int x, int y, int width, int height)
+            : this(1, 0, 1, x, y, width, height)
         { }
 
-        public Settlement(int startPopulation, int initialWealth, int defence, int x, int y) 
-                        : base(x, y)
+        public Settlement(int startPopulation, int initialWealth, int defence, int x, int y, int width, int height) 
+                        : base(x, y, width, height)
         {
             this.Population = startPopulation;
             this.Wealth = initialWealth;

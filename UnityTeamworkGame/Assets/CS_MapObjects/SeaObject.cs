@@ -7,7 +7,7 @@ namespace UnityTeamworkGame.CS_MapObjects
 {
     public abstract class SeaObject : MapObject
     {
-        public SeaObject(int x, int y) : base(x, y)
+        public SeaObject(int x, int y, int width, int height) : base(x, y, width, height)
         {
         }
     }

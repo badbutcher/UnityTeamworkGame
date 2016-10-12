@@ -10,7 +10,7 @@ namespace UnityTeamworkGame.CS_MapObjects
     {
 
         // constructors
-        protected LandObject(int x, int y) : base(x, y)
+        protected LandObject(int x, int y, int width, int height) : base(x, y, width, height)
         {
 
         }
