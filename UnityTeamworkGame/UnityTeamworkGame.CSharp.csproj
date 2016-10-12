@@ -74,8 +74,12 @@
     <Compile Include="Assets\CS_Ships\Ship.cs" />
     <Compile Include="Assets\Scripts\MainMenuButtons.cs" />
     <Compile Include="Assets\Scripts\MainMenuParallaxScrolling.cs" />
+    <Compile Include="Assets\Scripts\RandomMusic.cs" />
+    <Compile Include="Assets\Scripts\RandomSounds.cs" />
     <Compile Include="Assets\Scripts\ShipMove.cs" />
     <Compile Include="Assets\Scripts\ShopButtons.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\SoundSave.cs" />
     <Compile Include="Assets\Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
