@@ -1,28 +1,28 @@
 fileFormatVersion: 2
 guid: b273b67336a38254b8ae1e5f6c99fa65
-timeCreated: 1476027114
+timeCreated: 1476200976
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_0
-    21300002: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_1
-    21300004: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_2
-    21300006: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_3
-    21300008: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_4
-    21300010: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_5
-    21300012: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_6
-    21300014: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_7
-    21300016: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_8
-    21300018: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_9
-    21300020: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_10
-    21300022: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_11
-    21300024: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_12
-    21300026: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_13
-    21300028: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_14
-    21300030: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_15
-    21300032: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_16
-    21300034: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_17
-    21300036: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_18
+    21300000: BigCastle
+    21300002: Village1
+    21300004: Village2
+    21300006: House1
+    21300008: House2
+    21300010: Lake
+    21300012: WoodenDock4
+    21300014: Tree1
+    21300016: SnowMountain1
+    21300018: SnowMountain2
+    21300020: BrokenCastle
+    21300022: SnowTree1
+    21300024: FloatingIsland
+    21300026: BigClouds
+    21300028: CloudTemple
+    21300030: Castle
+    21300032: Cloud
+    21300034: Mountain1
+    21300036: Mountain2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -77,7 +77,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_0
+      name: BigCastle
       rect:
         serializedVersion: 2
         x: 375
@@ -90,7 +90,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_1
+      name: Village1
       rect:
         serializedVersion: 2
         x: 0
@@ -103,7 +103,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_2
+      name: Village2
       rect:
         serializedVersion: 2
         x: 94
@@ -116,7 +116,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_3
+      name: House1
       rect:
         serializedVersion: 2
         x: 283
@@ -129,7 +129,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_4
+      name: House2
       rect:
         serializedVersion: 2
         x: 329
@@ -142,7 +142,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_5
+      name: Lake
       rect:
         serializedVersion: 2
         x: 186
@@ -155,7 +155,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_6
+      name: WoodenDock4
       rect:
         serializedVersion: 2
         x: 144
@@ -168,7 +168,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_7
+      name: Tree1
       rect:
         serializedVersion: 2
         x: 141
@@ -181,7 +181,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_8
+      name: SnowMountain1
       rect:
         serializedVersion: 2
         x: 282
@@ -194,10 +194,10 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_9
+      name: SnowMountain2
       rect:
         serializedVersion: 2
-        x: 282
+        x: 281
         y: 421
         width: 92
         height: 95
@@ -207,7 +207,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_10
+      name: BrokenCastle
       rect:
         serializedVersion: 2
         x: 656
@@ -220,7 +220,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_11
+      name: SnowTree1
       rect:
         serializedVersion: 2
         x: 189
@@ -233,7 +233,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_12
+      name: FloatingIsland
       rect:
         serializedVersion: 2
         x: 563
@@ -246,7 +246,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_13
+      name: BigClouds
       rect:
         serializedVersion: 2
         x: 660
@@ -259,7 +259,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_14
+      name: CloudTemple
       rect:
         serializedVersion: 2
         x: 566
@@ -272,7 +272,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_15
+      name: Castle
       rect:
         serializedVersion: 2
         x: 469
@@ -285,7 +285,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_16
+      name: Cloud
       rect:
         serializedVersion: 2
         x: 280
@@ -298,7 +298,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_17
+      name: Mountain1
       rect:
         serializedVersion: 2
         x: 92
@@ -311,7 +311,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: World_B.thumb.png.e68d79a9f3b1ec90e18a1645f3c1c58f_18
+      name: Mountain2
       rect:
         serializedVersion: 2
         x: 93
