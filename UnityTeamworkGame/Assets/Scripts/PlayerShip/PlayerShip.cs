@@ -20,6 +20,7 @@ public class PlayerShip : MonoBehaviour
             this.Ani.Play("Explode");
             IsDead = true;
         }
+
         if (PirateShip.BattleWon)
         {
             StartCoroutine(Load());
@@ -27,6 +28,15 @@ public class PlayerShip : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "PirateCannonBall")
+        {
+            MonoBehaviour.Destroy(col.gameObject);
+            this.PlayerHealth -= 10;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "PirateCannonBall")
         {

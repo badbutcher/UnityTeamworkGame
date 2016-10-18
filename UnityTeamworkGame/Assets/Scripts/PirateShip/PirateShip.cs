@@ -18,10 +18,8 @@ public class PirateShip : MonoBehaviour
         if (this.Health <= 0)
         {
             BattleWon = true;
-            this.Ani.Play("Explode");
-            
+            this.Ani.Play("Explode");    
             MonoBehaviour.Destroy(this.gameObject, 0.52f);
-
         }
     }
 

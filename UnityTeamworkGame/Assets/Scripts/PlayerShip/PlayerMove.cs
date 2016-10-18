@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour
 {
     public static string[] namesOfDestroyedObjects = new string[100];
-    private int counter = 0;
+    public static int counter = 0;
 
     public GameObject Up;
     public GameObject Down;
@@ -23,13 +23,13 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
-        
-
         scene = SceneManager.GetActiveScene();
+
         if (scene.name == "MainScene")
         {
             this.gameObject.transform.position = new Vector3(X, Y, 0);
         }
+
         if (namesOfDestroyedObjects.Length > 0)
         {
             for (int i = 0; i < namesOfDestroyedObjects.Length; i++)
@@ -37,13 +37,13 @@ public class PlayerMove : MonoBehaviour
                 Destroy(GameObject.Find(namesOfDestroyedObjects[i]));
             }
         }
+
         this.Reset();
         this.Up.SetActive(true);
     }
 
     private void Update()
     {
-        Debug.Log(X);
         if (!PlayerShip.IsDead)
         {
             if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W)))
