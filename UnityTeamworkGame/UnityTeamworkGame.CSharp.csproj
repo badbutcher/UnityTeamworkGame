@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -72,15 +74,19 @@
     <Compile Include="Assets\CS_Ships\PlayerShip.cs" />
     <Compile Include="Assets\CS_Ships\Projectile.cs" />
     <Compile Include="Assets\CS_Ships\Ship.cs" />
-    <Compile Include="Assets\Scripts\MainMenuButtons.cs" />
-    <Compile Include="Assets\Scripts\MainMenuParallaxScrolling.cs" />
-    <Compile Include="Assets\Scripts\RandomMusic.cs" />
-    <Compile Include="Assets\Scripts\RandomSounds.cs" />
-    <Compile Include="Assets\Scripts\ShipMove.cs" />
-    <Compile Include="Assets\Scripts\ShopButtons.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\SoundSave.cs" />
-    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\Scripts\CannonBallLife.cs" />
+    <Compile Include="Assets\Scripts\PirateShip\PirateCannon.cs" />
+    <Compile Include="Assets\Scripts\PirateShip\PirateMove.cs" />
+    <Compile Include="Assets\Scripts\PirateShip\PirateShip.cs" />
+    <Compile Include="Assets\Scripts\PlayerShip\PlayerCannons.cs" />
+    <Compile Include="Assets\Scripts\PlayerShip\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\PlayerShip\PlayerShip.cs" />
+    <Compile Include="Assets\Scripts\Sound\RandomMusic.cs" />
+    <Compile Include="Assets\Scripts\Sound\RandomSounds.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuButtons.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuParallaxScrolling.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopButtons.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
