@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuButtons.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuParallaxScrolling.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\ShopButtons.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

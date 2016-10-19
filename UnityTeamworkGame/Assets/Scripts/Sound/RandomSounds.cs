@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class RandomSounds : MonoBehaviour
 {
     private AudioSource source;
+
     public AudioClip[] Sounds;
     public int Rnd;
 
@@ -28,7 +29,7 @@ public class RandomSounds : MonoBehaviour
         while (true)
         {
             this.Rnd = Random.Range(0, this.Sounds.Length);
-            yield return new WaitForSeconds(Random.Range(20, 30));
+            yield return new WaitForSeconds(Random.Range(1, 3));
             this.source.PlayOneShot(this.Sounds[this.Rnd]);
         }
     }
