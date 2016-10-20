@@ -6,7 +6,6 @@ public class RandomMusic : MonoBehaviour
 {
     private AudioSource source;
     public AudioClip[] Sounds;
-    public int Rnd;
 
     void Awake()
     {
@@ -15,10 +14,10 @@ public class RandomMusic : MonoBehaviour
 
     void Start()
     {
-        if (!(SceneManager.GetActiveScene().buildIndex == 0))
-        {
+        //if (!(SceneManager.GetActiveScene().buildIndex == 0))
+        //{
             this.StartCoroutine(this.RandomSound());
-        }
+        //}
 
         this.source.volume = SoundSave.CurrentMusicValue;
     }
@@ -27,9 +26,10 @@ public class RandomMusic : MonoBehaviour
     {
         while (true)
         {
-            this.Rnd = Random.Range(0, this.Sounds.Length);
-            yield return new WaitForSeconds(Random.Range(120, 240));
-            this.source.PlayOneShot(this.Sounds[this.Rnd]);
+            int Rnd = Random.Range(0, this.Sounds.Length);
+            this.source.PlayOneShot(this.Sounds[Rnd]);
+            yield return new WaitForSeconds(240);
+            
         }
     }
 }

@@ -6,7 +6,6 @@ public class PlayerCannons : MonoBehaviour
     public AudioClip[] ShotSounds;
     public Rigidbody2D CannonBalls;
     public Transform Cannon;
-    public int Rnd;
 
     private void Start()
     {
@@ -31,7 +30,7 @@ public class PlayerCannons : MonoBehaviour
 
     private void RandomShotSounds()
     {
-        this.Rnd = Random.Range(0, this.ShotSounds.Length);
-        this.Source.PlayOneShot(this.ShotSounds[this.Rnd]);
+        int Rnd = Random.Range(0, this.ShotSounds.Length);
+        this.Source.PlayOneShot(this.ShotSounds[Rnd]);
     }
 }

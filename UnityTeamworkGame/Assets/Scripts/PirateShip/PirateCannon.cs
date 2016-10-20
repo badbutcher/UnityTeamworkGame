@@ -8,7 +8,6 @@ public class PirateCannon : MonoBehaviour
     public Rigidbody2D CannonBalls;
     public Transform Cannon;
     public GameObject Player;
-    public int Rnd;
 
     private void Start()
     {
@@ -38,7 +37,7 @@ public class PirateCannon : MonoBehaviour
 
     private void RandomShotSounds()
     {
-        this.Rnd = Random.Range(0, this.ShotSounds.Length);
-        this.Source.PlayOneShot(this.ShotSounds[this.Rnd]);
+        int Rnd = Random.Range(0, this.ShotSounds.Length);
+        this.Source.PlayOneShot(this.ShotSounds[Rnd]);
     }
 }

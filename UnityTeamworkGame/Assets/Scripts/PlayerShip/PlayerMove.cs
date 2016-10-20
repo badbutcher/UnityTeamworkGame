@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-    public static string[] namesOfDestroyedObjects = new string[100];
+    public static string[] namesOfDestroyedObjects = new string[100]; //Fix
     public static int counter = 0;
 
     public GameObject Up;

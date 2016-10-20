@@ -10,7 +10,6 @@ public class PirateShip : MonoBehaviour
     public static bool BattleWon;
     public float Health;
     public Animator Ani;
-    public int Rnd;
 
     private void Start()
     {
@@ -46,7 +45,7 @@ public class PirateShip : MonoBehaviour
 
     private void RandomHitSounds()
     {
-        this.Rnd = Random.Range(0, this.HitSounds.Length);
-        this.Source.PlayOneShot(this.HitSounds[this.Rnd]);
+        int Rnd = Random.Range(0, this.HitSounds.Length);
+        this.Source.PlayOneShot(this.HitSounds[Rnd]);
     }
 }
