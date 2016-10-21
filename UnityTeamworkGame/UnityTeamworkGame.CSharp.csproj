@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Sound\RandomMusic.cs" />
     <Compile Include="Assets\Scripts\Sound\RandomSounds.cs" />
     <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />
+    <Compile Include="Assets\Scripts\UI\BattleSceneUI.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuButtons.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuParallaxScrolling.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />

@@ -7,30 +7,18 @@ public class PirateShip : MonoBehaviour
     public AudioSource Source;
     public AudioClip[] HitSounds;
     public AudioClip DieSound;
-    public static bool BattleWon;
     public float Health;
     public Animator Ani;
 
     private void Start()
     {
-        this.Health = 120;
+        this.Health = 20;
         this.Source = this.GetComponent<AudioSource>();
     }
 
     private void Update()
     {
         this.Source.volume = SoundSave.CurrentSoundEffectsValue;
-        if (this.Health <= 0)
-        {
-            if (!BattleWon)
-            {
-                Source.PlayOneShot(DieSound);
-                BattleWon = true;
-            }
-            this.Ani.Play("Explode");    
-            MonoBehaviour.Destroy(this.gameObject, 0.52f);
-            
-        }
     }
 
     void OnCollisionEnter2D(Collision2D col)
