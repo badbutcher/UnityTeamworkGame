@@ -21,6 +21,7 @@ public class PlayerShip : MonoBehaviour
 
     private void Update()
     {
+        this.Source.volume = SoundSave.CurrentSoundEffectsValue;
         if (this.PlayerHealth <= 0)
         {
             IsDead = true;
@@ -29,12 +30,6 @@ public class PlayerShip : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "PirateCannonBall")
-        {
-            MonoBehaviour.Destroy(col.gameObject);
-            this.PlayerHealth -= 10;
-        }
-
         if (col.gameObject.tag == "PirateShip")
         {
             this.PlayerHealth -= 5;

@@ -11,13 +11,13 @@ public class PirateMove : MonoBehaviour
     {
         this.Reset();
         this.Sprites[0].SetActive(true);
-        for (int i = 1; i < Points.Length; i++)
+        for (int i = 1; i < this.Points.Length; i++)
         {
-            Points[i] = GameObject.Find("Point" + Random.Range(2,16));
+            this.Points[i] = GameObject.Find("Point" + Random.Range(2, 16));
         }
 
-        Points[0] = GameObject.Find("Point1");
-        Points[9] = GameObject.Find("Point15");
+        this.Points[0] = GameObject.Find("Point1");
+        this.Points[9] = GameObject.Find("Point15");
         this.gameObject.transform.position = this.Points[0].transform.position;
     }
 

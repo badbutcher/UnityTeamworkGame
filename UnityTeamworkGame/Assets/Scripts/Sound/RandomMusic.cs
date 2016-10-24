@@ -28,8 +28,7 @@ public class RandomMusic : MonoBehaviour
         {
             int Rnd = Random.Range(0, this.Sounds.Length);
             this.source.PlayOneShot(this.Sounds[Rnd]);
-            yield return new WaitForSeconds(240);
-            
+            yield return new WaitForSeconds(240);  
         }
     }
 }

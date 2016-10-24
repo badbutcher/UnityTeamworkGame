@@ -8,7 +8,9 @@ public class MainMenuButtons : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("MainScene");
+        EnemyManager.Enemies.Clear();
+        PlayerShip.IsDead = false;
+        SceneManager.LoadSceneAsync("MainScene");
     }
 
     public void ContinueGame()

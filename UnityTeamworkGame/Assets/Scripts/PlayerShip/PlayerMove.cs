@@ -3,9 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-    public static string[] namesOfDestroyedObjects = new string[100]; //Fix
-    public static int counter = 0;
-
     public GameObject Up;
     public GameObject Down;
     public GameObject Left;
@@ -16,26 +13,18 @@ public class PlayerMove : MonoBehaviour
     public GameObject DownLeft;
     public GameObject DownRight;
 
-    public Scene scene;
+    public Scene Scene;
 
     public static float X;
     public static float Y;
 
     private void Start()
     {
-        scene = SceneManager.GetActiveScene();
+        this.Scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "MainScene")
+        if (this.Scene.name == "MainScene")
         {
-            this.gameObject.transform.position = new Vector3(X, Y, 0);
-        }
-
-        if (namesOfDestroyedObjects.Length > 0)
-        {
-            for (int i = 0; i < namesOfDestroyedObjects.Length; i++)
-            {
-                Destroy(GameObject.Find(namesOfDestroyedObjects[i]));
-            }
+            this.gameObject.transform.position = new Vector3(0, 0, 0);//ToDo
         }
 
         this.Reset();
@@ -111,12 +100,11 @@ public class PlayerMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "PirateShip" && scene.name == "MainScene")
+        if (col.gameObject.tag == "PirateShip" && this.Scene.name == "MainScene")
         {
-            namesOfDestroyedObjects[counter] = col.gameObject.name;
-            counter++;
             X = this.gameObject.transform.position.x;
             Y = this.gameObject.transform.position.y;
+            EnemyManager.Enemy = col.gameObject.name;
             SceneManager.LoadScene("BattleScene");
         }
     }

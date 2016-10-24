@@ -23,17 +23,24 @@ public class PirateShip : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        if (col.gameObject.tag == "Player")
+        {
+            this.Health -= 5;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
         if (col.gameObject.tag == "PlayerCannonBall")
         {
             MonoBehaviour.Destroy(col.gameObject);
             this.Health -= 10;
-            RandomHitSounds();
         }
     }
 
     private void RandomHitSounds()
     {
-        int Rnd = Random.Range(0, this.HitSounds.Length);
-        this.Source.PlayOneShot(this.HitSounds[Rnd]);
+        int rnd = Random.Range(0, this.HitSounds.Length);
+        this.Source.PlayOneShot(this.HitSounds[rnd]);
     }
 }

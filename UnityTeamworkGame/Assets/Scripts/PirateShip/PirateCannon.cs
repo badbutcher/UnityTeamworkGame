@@ -31,13 +31,13 @@ public class PirateCannon : MonoBehaviour
             Rigidbody2D cannon;
             cannon = Instantiate(this.CannonBalls, this.Cannon.position, this.Cannon.rotation) as Rigidbody2D;
             cannon.AddForce(this.Cannon.right * 50f);
-            RandomShotSounds();
+            this.RandomShotSounds();
         }
     }
 
     private void RandomShotSounds()
     {
-        int Rnd = Random.Range(0, this.ShotSounds.Length);
-        this.Source.PlayOneShot(this.ShotSounds[Rnd]);
+        int rnd = Random.Range(0, this.ShotSounds.Length);
+        this.Source.PlayOneShot(this.ShotSounds[rnd]);
     }
 }

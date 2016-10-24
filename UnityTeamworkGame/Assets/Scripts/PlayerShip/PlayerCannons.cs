@@ -19,18 +19,18 @@ public class PlayerCannons : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
-        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0 )
+        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
         {
             Rigidbody2D cannon;
             cannon = Instantiate(this.CannonBalls, this.Cannon.position, this.Cannon.rotation) as Rigidbody2D;
             cannon.AddForce(this.Cannon.right * 50f);
-            RandomShotSounds();
+            this.RandomShotSounds();
         }
     }
 
     private void RandomShotSounds()
     {
-        int Rnd = Random.Range(0, this.ShotSounds.Length);
-        this.Source.PlayOneShot(this.ShotSounds[Rnd]);
+        int rnd = Random.Range(0, this.ShotSounds.Length);
+        this.Source.PlayOneShot(this.ShotSounds[rnd]);
     }
 }

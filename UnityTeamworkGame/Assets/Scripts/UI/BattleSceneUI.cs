@@ -8,61 +8,65 @@ public class BattleSceneUI : MonoBehaviour
     public Text PlayerHp;
     public PlayerShip PlayerShip;
     public PirateShip PirateShip;
-    private bool BattleWonCheck;
-    private bool BattleLostCheck;
+    private bool battleWonCheck;
+    private bool battleLostCheck;
     public GameObject BattleWonScreen;
     public GameObject BattleLostScreen;
+    public AudioSource Source;
+    public AudioClip[] Sounds;
 
     void Start()
     {
-        BattleWonCheck = false;
-        BattleLostCheck = false;
-        BattleWonScreen.SetActive(false);
-        BattleLostScreen.SetActive(false);
+        this.battleWonCheck = false;
+        this.battleLostCheck = false;
+        this.BattleWonScreen.SetActive(false);
+        this.BattleLostScreen.SetActive(false);
+        this.Source = this.GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        PlayerHp.text = PlayerShip.PlayerMaxHealth + " / " + PlayerShip.PlayerHealth;
-        if (PlayerShip.PlayerHealth <= 0 && !BattleLostCheck)
+        this.Source.volume = SoundSave.CurrentSoundEffectsValue;
+        this.PlayerHp.text = this.PlayerShip.PlayerMaxHealth + " / " + this.PlayerShip.PlayerHealth;
+        if (this.PlayerShip.PlayerHealth <= 0 && !this.battleLostCheck)
         {
-            BattleLost();
+            this.BattleLost();
         }
-        else if (PirateShip.Health <= 0 && !BattleWonCheck)
+        else if (this.PirateShip.Health <= 0 && !this.battleWonCheck)
         {
-            BattleWon();
+            this.BattleWon();
         }
     }
 
     void BattleLost()
     {
-        BattleLostCheck = true;
-        PlayerShip.Source.PlayOneShot(PlayerShip.DieSound);
-        PlayerShip.Ani.Play("Explode");
-        StartCoroutine(BattleLostScreenShow());
+        this.battleLostCheck = true;
+        this.PlayerShip.Source.PlayOneShot(this.PlayerShip.DieSound);
+        this.PlayerShip.Ani.Play("Explode");
+        this.StartCoroutine(this.BattleLostScreenShow());
     }
 
     void BattleWon()
     {
-        BattleWonCheck = true;
-        PirateShip.Source.PlayOneShot(PirateShip.DieSound);
-        PirateShip.Ani.Play("Explode");
-        MonoBehaviour.Destroy(PirateShip.gameObject, 0.52f);
-        StartCoroutine(BattleWonScreenShow());
+        this.battleWonCheck = true;
+        this.PirateShip.Source.PlayOneShot(this.PirateShip.DieSound);
+        this.PirateShip.Ani.Play("Explode");
+        MonoBehaviour.Destroy(this.PirateShip.gameObject, 0.52f);
+        this.StartCoroutine(this.BattleWonScreenShow());
     }
 
     IEnumerator BattleLostScreenShow()
     {
         yield return new WaitForSeconds(2);
-        BattleLostScreen.SetActive(true);
-        //someSound
+        this.BattleLostScreen.SetActive(true);
+        this.Source.PlayOneShot(this.Sounds[0]);
     }
 
     IEnumerator BattleWonScreenShow()
     {
         yield return new WaitForSeconds(2);
-        BattleWonScreen.SetActive(true);
-        //someSound
+        this.BattleWonScreen.SetActive(true);
+        this.Source.PlayOneShot(this.Sounds[1]);
     }
 
     public void ExitGame()
