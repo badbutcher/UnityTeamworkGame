@@ -72,9 +72,9 @@
     <Compile Include="Assets\CS_Ships\PlayerShip.cs" />
     <Compile Include="Assets\CS_Ships\Projectile.cs" />
     <Compile Include="Assets\CS_Ships\Ship.cs" />
-    <Compile Include="Assets\OnCollisionWithLand.cs" />
     <Compile Include="Assets\Scripts\CannonBallLife.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\OnCollisionWithLand.cs" />
     <Compile Include="Assets\Scripts\PirateShip\PirateCannon.cs" />
     <Compile Include="Assets\Scripts\PirateShip\PirateMove.cs" />
     <Compile Include="Assets\Scripts\PirateShip\PirateShip.cs" />
