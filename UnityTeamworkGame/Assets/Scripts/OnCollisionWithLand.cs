@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LandSoundController : MonoBehaviour
+public class OnCollisionWithLand : MonoBehaviour
 {
     public AudioClip land;    
                              
@@ -11,9 +11,12 @@ public class LandSoundController : MonoBehaviour
         GetComponent<AudioSource>().clip = land;
     }
 
-    void OnCollisionEnter()  
+    void OnCollisionEnter2D(Collision2D col)
     {
-        GetComponent<AudioSource>().Play();
+        if (col.gameObject.tag == "Character")
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
-    
+
 }
