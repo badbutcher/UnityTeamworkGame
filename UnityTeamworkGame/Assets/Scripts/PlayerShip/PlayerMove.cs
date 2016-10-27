@@ -15,6 +15,8 @@ public class PlayerMove : MonoBehaviour
 
     public Scene Scene;
 
+    public PlayerStats PlayerStats;
+
     public static float X;
     public static float Y;
 
@@ -24,7 +26,7 @@ public class PlayerMove : MonoBehaviour
 
         if (this.Scene.name == "MainScene")
         {
-            this.gameObject.transform.position = new Vector3(0, 0, 0);//ToDo
+            this.gameObject.transform.position = new Vector3(X, Y, 0);
         }
 
         this.Reset();
@@ -33,55 +35,55 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        if (!PlayerShip.IsDead)
+        if (!PlayerStats.IsDead)
         {
             if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W)))
             {
                 this.Reset();
                 this.UpRight.SetActive(true);
-                this.transform.Translate(0.5f * Time.deltaTime, 0.5f * Time.deltaTime, 0);
+                this.transform.Translate(PlayerStats.PlayerMoveSpeed * Time.deltaTime, PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0);
             }
             else if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W)))
             {
                 this.Reset();
                 this.UpLeft.SetActive(true);
-                this.transform.Translate(-0.5f * Time.deltaTime, 0.5f * Time.deltaTime, 0);
+                this.transform.Translate(-PlayerStats.PlayerMoveSpeed * Time.deltaTime, PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0);
             }
             else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)))
             {
                 this.Reset();
                 this.DownRight.SetActive(true);
-                this.transform.Translate(0.5f * Time.deltaTime, -0.5f * Time.deltaTime, 0);
+                this.transform.Translate(PlayerStats.PlayerMoveSpeed * Time.deltaTime, -PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0);
             }
             else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)))
             {
                 this.Reset();
                 this.DownLeft.SetActive(true);
-                this.transform.Translate(-0.5f * Time.deltaTime, -0.5f * Time.deltaTime, 0);
+                this.transform.Translate(-PlayerStats.PlayerMoveSpeed * Time.deltaTime, -PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0);
             }
             else if (Input.GetKey(KeyCode.W))
             {
                 this.Reset();
                 this.Up.SetActive(true);
-                this.transform.Translate(0, 0.5f * Time.deltaTime, 0);
+                this.transform.Translate(0, PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0);
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 this.Reset();
                 this.Down.SetActive(true);
-                this.transform.Translate(0, -0.5f * Time.deltaTime, 0);
+                this.transform.Translate(0, -PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0);
             }
             else if (Input.GetKey(KeyCode.A))
             {
                 this.Reset();
                 this.Left.SetActive(true);
-                this.transform.Translate(-0.5f * Time.deltaTime, 0, 0);
+                this.transform.Translate(-PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0, 0);
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 this.Reset();
                 this.Right.SetActive(true);
-                this.transform.Translate(0.5f * Time.deltaTime, 0, 0);
+                this.transform.Translate(PlayerStats.PlayerMoveSpeed * Time.deltaTime, 0, 0);
             }
         }
     }

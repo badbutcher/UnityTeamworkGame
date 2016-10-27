@@ -19,9 +19,4 @@ public class EnemyManager : MonoBehaviour
            MonoBehaviour.Destroy(GameObject.Find(gameObject.name = Enemies[i]));
         }
     }
-
-    void Update()
-    {
-        Debug.Log(Enemies.Count);
-    }
 }

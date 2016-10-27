@@ -3,8 +3,8 @@ using System.Collections;
 
 public class OnCollisionWithLand : MonoBehaviour
 {
-    public AudioClip land;    
-                             
+    public AudioClip land;
+
     void Start()
     {
         GetComponent<AudioSource>().playOnAwake = false;
@@ -18,5 +18,4 @@ public class OnCollisionWithLand : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
     }
-
 }

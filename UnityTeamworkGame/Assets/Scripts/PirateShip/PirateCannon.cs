@@ -25,7 +25,7 @@ public class PirateCannon : MonoBehaviour
 
     IEnumerator ShotRandom()
     {
-        while (!PlayerShip.IsDead)
+        while (!PlayerStats.IsDead)
         {
             yield return new WaitForSeconds(Random.Range(1, 1));
             Rigidbody2D cannon;

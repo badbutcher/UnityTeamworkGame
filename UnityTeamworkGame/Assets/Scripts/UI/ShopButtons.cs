@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class ShopButtons : MonoBehaviour
 {
-    public Text CurrentMenu;
-    public Text PlayerGold;
-    public Text PlayerHp;
-    public Text PlayerCannonBalls;
+    public Text CurrentMenuText;
+    public Text PlayerGoldText;
+    public Text PlayerHpText;
+    public Text PlayerCannonBallsText;
     public GameObject WeaponsPanel;
     public GameObject UpdatePanel;
     public GameObject RepairShipPanel;
@@ -14,58 +14,52 @@ public class ShopButtons : MonoBehaviour
     public GameObject ExitShop;
     private AudioSource source;
     public AudioClip[] Sounds;
-
-    //Test
-
-    public float Gold;
-    public float Hp;
-    public float MaxHp;
-    public float CannonBalls;
-    public float MaxCannonBalls;
+    public PlayerStats PlayerStats;
+    public PlayerCannons PlayerCannons;
 
     void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
 
-    private void Update()
-    {
-        this.PlayerGold.text = " - " + this.Gold;
-        this.PlayerHp.text = " - " + this.Hp + " / " + this.MaxHp;
-        this.PlayerCannonBalls.text = " - " + this.CannonBalls + " / " + this.MaxCannonBalls;
-    }
-
     private void Start()
     {
         this.source.PlayOneShot(this.Sounds[0]);
-        this.CurrentMenu.text = "Welcome";
+        this.CurrentMenuText.text = "Welcome";
         this.Reset();
+    }
+
+    private void Update()
+    {
+        this.PlayerGoldText.text = " - " + PlayerStats.PlayerGold;
+        this.PlayerHpText.text = " - " + PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
+        this.PlayerCannonBallsText.text = " - " + PlayerStats.PlayerCannonBalls + " / " + PlayerStats.PlayerMaxCannonBalls;
     }
 
     public void ShowWeapons()
     {
-        this.CurrentMenu.text = "Weapon Supplies";
+        this.CurrentMenuText.text = "Weapon Supplies";
         this.Reset();
         this.WeaponsPanel.SetActive(true);
     }
 
     public void ShowUpdates()
     {
-        this.CurrentMenu.text = "Ship Updates";
+        this.CurrentMenuText.text = "Ship Updates";
         this.Reset();
         this.UpdatePanel.SetActive(true);
     }
 
     public void ShowRepairShip()
     {
-        this.CurrentMenu.text = "Ship Repair";
+        this.CurrentMenuText.text = "Ship Repair";
         this.Reset();
         this.RepairShipPanel.SetActive(true);
     }
 
     public void ShowQuest()
     {
-        this.CurrentMenu.text = "Tavern";
+        this.CurrentMenuText.text = "Tavern";
         this.Reset();
         this.QuestPanel.SetActive(true);
     }
@@ -86,89 +80,104 @@ public class ShopButtons : MonoBehaviour
 
     public void BuyCannonBalls()
     {
-        if (this.Gold >= 50 && this.MaxCannonBalls > this.CannonBalls)
+        if (PlayerStats.PlayerGold >= 50 && PlayerStats.PlayerMaxCannonBalls > PlayerStats.PlayerCannonBalls)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Gold -= 50;
-            this.CannonBalls++;
+            PlayerStats.PlayerGold -= 50;
+            PlayerStats.PlayerCannonBalls++;
         }
     }
 
     public void BuyExtraCannon()
     {
-        //TODO
+        if (PlayerStats.PlayerGold >= 200f)
+        {
+            this.source.PlayOneShot(this.Sounds[1]);
+            PlayerStats.PlayerGold -= 200f;
+            PlayerCannons.maxCannons -=1f;
+        }
     }
 
     public void BuyCannonsReloadSpeed()
     {
-        //TODO
+        if (PlayerStats.PlayerGold >= 200f)
+        {
+            this.source.PlayOneShot(this.Sounds[1]);
+            PlayerStats.PlayerGold -= 200;
+            PlayerCannons.shotCooldown -= 0.5f;
+        }
     }
 
     public void ImproveSpeed()
     {
-        //TODO
+        if (PlayerStats.PlayerGold >= 100f)
+        {
+            this.source.PlayOneShot(this.Sounds[1]);
+            PlayerStats.PlayerGold -= 100f;
+            PlayerStats.PlayerMoveSpeed += 0.5f;
+        }
     }
 
     public void ImproveHealth()
     {
-        if (this.Gold >= 100)
+        if (PlayerStats.PlayerGold >= 100f)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Gold -= 100;
-            this.Hp += 50;
-            this.MaxHp += 50;
+            PlayerStats.PlayerGold -= 100f;
+            PlayerStats.PlayerHealth += 50f;
+            PlayerStats.PlayerMaxHealth += 50f;
         }
     }
 
     public void ImproveStorage()
     {
-        if (this.Gold >= 100)
+        if (PlayerStats.PlayerGold >= 100f)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Gold -= 100;
-            this.MaxCannonBalls += 5;
+            PlayerStats.PlayerGold -= 100f;
+            PlayerStats.PlayerMaxCannonBalls += 5f;
         }
     }
 
     public void Repair25()
     {
-        if (this.Gold >= 20 && this.Hp < this.MaxHp)
+        if (PlayerStats.PlayerGold >= 20 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Gold -= 20;
-            this.Hp += 25;
+            PlayerStats.PlayerGold -= 20;
+            PlayerStats.PlayerHealth += 25;
             this.FixHealth();
         }
     }
 
     public void Repair50()
     {
-        if (this.Gold >= 40 && this.Hp < this.MaxHp)
+        if (PlayerStats.PlayerGold >= 40 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Gold -= 40;
-            this.Hp += 50;
+            PlayerStats.PlayerGold -= 40;
+            PlayerStats.PlayerHealth += 50;
             this.FixHealth();
         }
     }
 
     public void Repair75()
     {
-        if (this.Gold >= 60 && this.Hp < this.MaxHp)
+        if (PlayerStats.PlayerGold >= 60 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Gold -= 60;
-            this.Hp += 75;
+            PlayerStats.PlayerGold -= 60;
+            PlayerStats.PlayerHealth += 75;
             this.FixHealth();
         }
     }
 
     private void FixHealth()
     {
-        if (this.Hp > this.MaxHp)
+        if (PlayerStats.PlayerHealth > PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.Sounds[1]);
-            this.Hp = this.MaxHp;
+            PlayerStats.PlayerHealth = PlayerStats.PlayerMaxHealth;
         }
     }
 }

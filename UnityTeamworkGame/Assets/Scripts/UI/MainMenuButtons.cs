@@ -9,7 +9,7 @@ public class MainMenuButtons : MonoBehaviour
     public void StartGame()
     {
         EnemyManager.Enemies.Clear();
-        PlayerShip.IsDead = false;
+        PlayerStats.IsDead = false;
         SceneManager.LoadSceneAsync("MainScene");
     }
 
@@ -41,5 +41,17 @@ public class MainMenuButtons : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    private void ResetGame()
+    {
+        PlayerStats.PlayerMoveSpeed = 0.5f;
+        PlayerStats.PlayerHealth = 100;
+        PlayerStats.PlayerMaxHealth = 100;
+        PlayerStats.PlayerCannonBalls = 25;
+        PlayerStats.PlayerMaxCannonBalls = 25;
+        PlayerStats.PlayerGold = 1000;
+        PlayerCannons.maxCannons = 2;
+        PlayerCannons.shotCooldown = 0.5f;
     }
 }

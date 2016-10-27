@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class BattleSceneUI : MonoBehaviour
 {
     public Text PlayerHp;
-    public PlayerShip PlayerShip;
     public PirateShip PirateShip;
+    public PlayerStats PlayerStats;
     private bool battleWonCheck;
     private bool battleLostCheck;
     public GameObject BattleWonScreen;
@@ -27,12 +27,12 @@ public class BattleSceneUI : MonoBehaviour
     void Update()
     {
         this.Source.volume = SoundSave.CurrentSoundEffectsValue;
-        this.PlayerHp.text = this.PlayerShip.PlayerMaxHealth + " / " + this.PlayerShip.PlayerHealth;
-        if (this.PlayerShip.PlayerHealth <= 0 && !this.battleLostCheck)
+        PlayerHp.text = PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
+        if (PlayerStats.PlayerHealth <= 0 && !this.battleLostCheck)
         {
             this.BattleLost();
         }
-        else if (this.PirateShip.Health <= 0 && !this.battleWonCheck)
+        if (this.PirateShip.Health <= 0 && !this.battleWonCheck)
         {
             this.BattleWon();
         }
@@ -41,8 +41,6 @@ public class BattleSceneUI : MonoBehaviour
     void BattleLost()
     {
         this.battleLostCheck = true;
-        this.PlayerShip.Source.PlayOneShot(this.PlayerShip.DieSound);
-        this.PlayerShip.Ani.Play("Explode");
         this.StartCoroutine(this.BattleLostScreenShow());
     }
 

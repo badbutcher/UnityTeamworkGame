@@ -23,7 +23,7 @@ public class PirateMove : MonoBehaviour
 
     private void Update()
     {
-        if (!PlayerShip.IsDead)
+        if (!PlayerStats.IsDead)
         {
             this.transform.position = Vector2.MoveTowards(this.transform.position, this.Points[this.CurrentPoint].transform.position, 3f * Time.deltaTime);
             if (this.transform.position == this.Points[this.CurrentPoint].transform.position)
