@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     public static float PlayerGold = 1000;
     public static float PirateMap = 0;
     public bool isInShop;
+    private bool TreasureFound;
     public GameObject Crosshair;
     public GameObject Shop;
 
@@ -77,6 +78,12 @@ public class PlayerStats : MonoBehaviour
         {
             MonoBehaviour.Destroy(col.gameObject);
             PlayerHealth -= 10;
+        }
+
+        if (col.gameObject.name == "Treasure" && PirateMap == 5 && !TreasureFound)
+        {
+            PlayerGold += 1000;
+            TreasureFound = true;
         }
     }
 }
