@@ -13,7 +13,7 @@ public class ShopButtons : MonoBehaviour
     public GameObject QuestPanel;
     public GameObject ExitShop;
     private AudioSource source;
-    public AudioClip[] Sounds;
+    public AudioClip BuySound;
     public PlayerStats PlayerStats;
     public PlayerCannons PlayerCannons;
 
@@ -24,7 +24,6 @@ public class ShopButtons : MonoBehaviour
 
     private void Start()
     {
-        this.source.PlayOneShot(this.Sounds[0]);
         this.CurrentMenuText.text = "Welcome";
         this.Reset();
     }
@@ -66,6 +65,7 @@ public class ShopButtons : MonoBehaviour
 
     public void Exit()
     {
+        PlayerStats.isInShop = false;
         this.Reset();
         this.ExitShop.SetActive(false);
     }
@@ -82,7 +82,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 50 && PlayerStats.PlayerMaxCannonBalls > PlayerStats.PlayerCannonBalls)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 50;
             PlayerStats.PlayerCannonBalls++;
         }
@@ -92,7 +92,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 200f)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 200f;
             PlayerCannons.maxCannons -=1f;
         }
@@ -102,7 +102,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 200f)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 200;
             PlayerCannons.shotCooldown -= 0.5f;
         }
@@ -112,7 +112,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 100f)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 100f;
             PlayerStats.PlayerMoveSpeed += 0.5f;
         }
@@ -122,7 +122,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 100f)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 100f;
             PlayerStats.PlayerHealth += 50f;
             PlayerStats.PlayerMaxHealth += 50f;
@@ -133,7 +133,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 100f)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 100f;
             PlayerStats.PlayerMaxCannonBalls += 5f;
         }
@@ -143,7 +143,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 20 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 20;
             PlayerStats.PlayerHealth += 25;
             this.FixHealth();
@@ -154,7 +154,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 40 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 40;
             PlayerStats.PlayerHealth += 50;
             this.FixHealth();
@@ -165,7 +165,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerGold >= 60 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 60;
             PlayerStats.PlayerHealth += 75;
             this.FixHealth();
@@ -176,7 +176,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerHealth > PlayerStats.PlayerMaxHealth)
         {
-            this.source.PlayOneShot(this.Sounds[1]);
+            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerHealth = PlayerStats.PlayerMaxHealth;
         }
     }

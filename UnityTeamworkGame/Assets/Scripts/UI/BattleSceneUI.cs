@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class BattleSceneUI : MonoBehaviour
 {
-    public Text PlayerHp;
     public PirateShip PirateShip;
     public PlayerStats PlayerStats;
     private bool battleWonCheck;
@@ -14,6 +13,7 @@ public class BattleSceneUI : MonoBehaviour
     public GameObject BattleLostScreen;
     public AudioSource Source;
     public AudioClip[] Sounds;
+    public Text SalvagedItemsText;
 
     void Start()
     {
@@ -27,7 +27,6 @@ public class BattleSceneUI : MonoBehaviour
     void Update()
     {
         this.Source.volume = SoundSave.CurrentSoundEffectsValue;
-        PlayerHp.text = PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
         if (PlayerStats.PlayerHealth <= 0 && !this.battleLostCheck)
         {
             this.BattleLost();
@@ -62,9 +61,43 @@ public class BattleSceneUI : MonoBehaviour
 
     IEnumerator BattleWonScreenShow()
     {
+        int RandomGold = Random.Range(25, 300);
+        int RandomHealth = Random.Range(5, 20);
+        int RandomCannonBalls = Random.Range(1, 3);
+        int RandomValue = Random.Range(1, 5);
         yield return new WaitForSeconds(2);
         this.BattleWonScreen.SetActive(true);
         this.Source.PlayOneShot(this.Sounds[1]);
+        if (RandomValue == 1)
+        {
+            this.SalvagedItemsText.text = "Salvaged Items: " + "\n- Gold: " + RandomGold;
+            PlayerStats.PlayerGold += RandomGold;
+
+        }
+        else if (RandomValue == 2)
+        {
+            this.SalvagedItemsText.text = "Salvaged Items: " + "\n- Gold: " + RandomGold + "\n- Wood: " + RandomHealth;
+            PlayerStats.PlayerGold += RandomGold;
+            PlayerStats.PlayerHealth += RandomHealth;
+        }
+        else if (RandomValue == 3)
+        {
+            this.SalvagedItemsText.text = "Salvaged Items: " + "\n- Gold: " + RandomGold + "\n- Wood: " + RandomHealth + "\n- Cannon balls: " + RandomCannonBalls;
+            PlayerStats.PlayerGold += RandomGold;
+            PlayerStats.PlayerHealth += RandomHealth;
+            PlayerStats.PlayerCannonBalls += RandomCannonBalls;
+        }
+        else if (RandomValue == 4)
+        {
+            this.SalvagedItemsText.text = "Salvaged Items: " + "\n- Gold: " + RandomGold + "\n- Wood: " + RandomHealth + "\n- Cannon balls: " + RandomCannonBalls + "\n- 1 Map piece";
+            PlayerStats.PlayerGold += RandomGold;
+            PlayerStats.PlayerHealth += RandomHealth;
+            PlayerStats.PlayerCannonBalls += RandomCannonBalls;
+            if (PlayerStats.PirateMap != 5)
+            {
+                PlayerStats.PirateMap++;
+            }
+        }
     }
 
     public void ExitGame()

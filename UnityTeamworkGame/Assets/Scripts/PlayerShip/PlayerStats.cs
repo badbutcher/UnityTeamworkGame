@@ -11,15 +11,20 @@ public class PlayerStats : MonoBehaviour
     public static float PlayerCannonBalls = 25;
     public static float PlayerMaxCannonBalls = 25;
     public static float PlayerGold = 1000;
+    public static float PirateMap = 0;
+    public bool isInShop;
     public GameObject Crosshair;
+    public GameObject Shop;
 
     public Animator Animator;
-    public AudioSource Source;
+    private AudioSource source;
     public AudioClip DieSound;
+    public AudioClip HitLand;
+    public AudioClip WelcomeSound;
 
     void Awake()
     {
-        this.Source = this.GetComponent<AudioSource>();
+        this.source = this.GetComponent<AudioSource>();
     }
 
     void Start()
@@ -36,11 +41,11 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        this.Source.volume = SoundSave.CurrentSoundEffectsValue;
+        this.source.volume = SoundSave.CurrentSoundEffectsValue;
         if (PlayerHealth <= 0 && IsDead)
         {
             IsDead = true;
-            this.Source.PlayOneShot(this.DieSound);
+            this.source.PlayOneShot(this.DieSound);
             this.Animator.Play("Explode");
         }
     }
@@ -50,6 +55,19 @@ public class PlayerStats : MonoBehaviour
         if (col.gameObject.tag == "PirateShipBattle")
         {
             PlayerHealth -= 5;
+        }
+
+        if (col.gameObject.tag == "Terrain")
+        {
+            PlayerHealth -= 5;
+            source.PlayOneShot(HitLand);
+        }
+
+        if (col.gameObject.tag == "Dock")
+        {
+            Shop.SetActive(true);
+            isInShop = true;
+            this.source.PlayOneShot(this.WelcomeSound);
         }
     }
 

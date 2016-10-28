@@ -35,7 +35,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        if (!PlayerStats.IsDead)
+        if (!PlayerStats.IsDead && !PlayerStats.isInShop)
         {
             if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W)))
             {
