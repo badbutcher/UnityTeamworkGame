@@ -106,6 +106,10 @@ public class PlayerMove : MonoBehaviour
         {
             X = this.gameObject.transform.position.x;
             Y = this.gameObject.transform.position.y;
+            if (PlayerStats.QuestIsActive)
+            {
+                PlayerStats.questShipsKilledCounter++;
+            }
             EnemyManager.Enemy = col.gameObject.name;
             SceneManager.LoadScene("BattleScene");
         }

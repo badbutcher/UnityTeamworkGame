@@ -12,10 +12,13 @@ public class PlayerStats : MonoBehaviour
     public static float PlayerMaxCannonBalls = 25;
     public static float PlayerGold = 1000;
     public static float PirateMap = 0;
+    public static bool QuestIsActive;
     public bool isInShop;
     private bool TreasureFound;
     public GameObject Crosshair;
     public GameObject Shop;
+    public string currentIsland;
+    public static int questShipsKilledCounter;
 
     public Animator Animator;
     private AudioSource source;
@@ -53,6 +56,7 @@ public class PlayerStats : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        currentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
         {
             PlayerHealth -= 5;

@@ -11,6 +11,7 @@ public class PlayerUI : MonoBehaviour
     public Text PlayerCannonBallsText;
     public PlayerStats PlayerStats;
     public GameObject[] MapParts;
+    public Text CurrentQuest;
 
     void Start()
     {
@@ -23,6 +24,19 @@ public class PlayerUI : MonoBehaviour
         PlayerGoldText.text = PlayerStats.PlayerGold.ToString();
         PlayerHpText.text = PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
         PlayerCannonBallsText.text = PlayerStats.PlayerCannonBalls + " / " + PlayerStats.PlayerMaxCannonBalls;
+        if (PlayerStats.QuestIsActive)
+        {
+            CurrentQuest.text = "Desotroy " + ShopButtons.ShipsToDestroyQuest +
+                " pirate ships for " + ShopButtons.RewardQuest +
+                "G (" + PlayerStats.questShipsKilledCounter + "/" + ShopButtons.ShipsToDestroyQuest + ")";
+        }
+        if (PlayerStats.questShipsKilledCounter == ShopButtons.ShipsToDestroyQuest)
+        {
+            PlayerStats.questShipsKilledCounter = 0;
+            CurrentQuest.text = string.Empty;
+            PlayerStats.PlayerGold += ShopButtons.RewardQuest;
+            PlayerStats.QuestIsActive = false;
+        }
     }
 
     public void ShowQuests()
