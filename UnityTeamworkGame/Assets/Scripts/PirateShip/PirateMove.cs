@@ -28,7 +28,7 @@ public class PirateMove : MonoBehaviour
             this.transform.position = Vector2.MoveTowards(this.transform.position, this.Points[this.CurrentPoint].transform.position, 0.5f * Time.deltaTime);
             if (this.transform.position == this.Points[this.CurrentPoint].transform.position)
             {
-                if (this.CurrentPoint == this.Points.Length - 1)
+                if (this.CurrentPoint == this.Points.Length - 1f)
                 {
                     this.CurrentPoint = 0;
                 }

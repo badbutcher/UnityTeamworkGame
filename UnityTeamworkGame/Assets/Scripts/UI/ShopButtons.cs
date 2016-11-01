@@ -37,7 +37,7 @@ public class ShopButtons : MonoBehaviour
         this.Reset();
         if (!PlayerStats.QuestIsActive)
         {
-            QuestTypeDestroyPirateShips();
+            this.QuestTypeDestroyPirateShips();
         }
     }
 
@@ -46,17 +46,19 @@ public class ShopButtons : MonoBehaviour
         this.PlayerGoldText.text = " - " + PlayerStats.PlayerGold;
         this.PlayerHpText.text = " - " + PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
         this.PlayerCannonBallsText.text = " - " + PlayerStats.PlayerCannonBalls + " / " + PlayerStats.PlayerMaxCannonBalls;
-        if (PlayerCannons.maxCannons == 0)
+        if (PlayerCannons.MaxCannons == 0f)
         {
-            BuyMoreCannonsText.text = "Buy extra cannon (Maxed)";
+            this.BuyMoreCannonsText.text = "Buy extra cannon (Maxed)";
         }
-        if (PlayerCannons.shotCooldown == 1.5f)
+
+        if (PlayerCannons.ShotCooldown == 1.5f)
         {
-            BuyCannonsReloadSpeedText.text = "Reload faster by 0.5s (Maxed) ";
+            this.BuyCannonsReloadSpeedText.text = "Reload faster by 0.5s (Maxed) ";
         }
+
         if (PlayerStats.PlayerMoveSpeed == 2f)
         {
-            ImproveSpeedText.text = "Increase movement speed (Maxed)";
+            this.ImproveSpeedText.text = "Increase movement speed (Maxed)";
         }
     }
 
@@ -90,7 +92,7 @@ public class ShopButtons : MonoBehaviour
 
     public void Exit()
     {
-        PlayerStats.isInShop = false;
+        this.PlayerStats.IsInShop = false;
         this.Reset();
         this.ExitShop.SetActive(false);
     }
@@ -105,31 +107,31 @@ public class ShopButtons : MonoBehaviour
 
     public void BuyCannonBalls()
     {
-        if (PlayerStats.PlayerGold >= 50 && PlayerStats.PlayerMaxCannonBalls > PlayerStats.PlayerCannonBalls)
+        if (PlayerStats.PlayerGold >= 50f && PlayerStats.PlayerMaxCannonBalls > PlayerStats.PlayerCannonBalls)
         {
             this.source.PlayOneShot(this.BuySound);
-            PlayerStats.PlayerGold -= 50;
+            PlayerStats.PlayerGold -= 50f;
             PlayerStats.PlayerCannonBalls++;
         }
     }
 
     public void BuyExtraCannon()
     {
-        if (PlayerStats.PlayerGold >= 200f && PlayerCannons.maxCannons != 0)
+        if (PlayerStats.PlayerGold >= 200f && PlayerCannons.MaxCannons != 0)
         {
             this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 200f;
-            PlayerCannons.maxCannons -= 1f;
+            PlayerCannons.MaxCannons -= 1f;
         }
     }
 
     public void BuyCannonsReloadSpeed()
     {
-        if (PlayerStats.PlayerGold >= 200f && PlayerCannons.shotCooldown != 1.5f)
+        if (PlayerStats.PlayerGold >= 200f && PlayerCannons.ShotCooldown != 1.5f)
         {
             this.source.PlayOneShot(this.BuySound);
-            PlayerStats.PlayerGold -= 200;
-            PlayerCannons.shotCooldown -= 0.5f;
+            PlayerStats.PlayerGold -= 200f;
+            PlayerCannons.ShotCooldown -= 0.5f;
         }
     }
 
@@ -166,33 +168,33 @@ public class ShopButtons : MonoBehaviour
 
     public void Repair25()
     {
-        if (PlayerStats.PlayerGold >= 20 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
+        if (PlayerStats.PlayerGold >= 20f && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.BuySound);
-            PlayerStats.PlayerGold -= 20;
-            PlayerStats.PlayerHealth += 25;
+            PlayerStats.PlayerGold -= 20f;
+            PlayerStats.PlayerHealth += 25f;
             this.FixHealth();
         }
     }
 
     public void Repair50()
     {
-        if (PlayerStats.PlayerGold >= 40 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
+        if (PlayerStats.PlayerGold >= 40f && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.BuySound);
-            PlayerStats.PlayerGold -= 40;
-            PlayerStats.PlayerHealth += 50;
+            PlayerStats.PlayerGold -= 40f;
+            PlayerStats.PlayerHealth += 50f;
             this.FixHealth();
         }
     }
 
     public void Repair75()
     {
-        if (PlayerStats.PlayerGold >= 60 && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
+        if (PlayerStats.PlayerGold >= 60f && PlayerStats.PlayerHealth < PlayerStats.PlayerMaxHealth)
         {
             this.source.PlayOneShot(this.BuySound);
-            PlayerStats.PlayerGold -= 60;
-            PlayerStats.PlayerHealth += 75;
+            PlayerStats.PlayerGold -= 60f;
+            PlayerStats.PlayerHealth += 75f;
             this.FixHealth();
         }
     }
@@ -201,7 +203,7 @@ public class ShopButtons : MonoBehaviour
     {
         if (!PlayerStats.QuestIsActive)
         {
-            PlayerStats.questShipsKilledCounter = 0;
+            PlayerStats.QuestShipsKilledCounter = 0;
             PlayerStats.QuestIsActive = true;
         }
     }
@@ -217,13 +219,13 @@ public class ShopButtons : MonoBehaviour
 
     private void QuestTypeDestroyPirateShips()
     {
-        int ShipsToDestroy = Random.Range(1, 2);
-        int BonusReward = Random.Range(50, 101);
-        int Reward = (ShipsToDestroy * 25) + BonusReward;
-        BonusRewardQuest = BonusReward;
-        RewardQuest = Reward;
-        ShipsToDestroyQuest = ShipsToDestroy;
-        string Text = "Destroy " + ShipsToDestroy + " pirate ships for " + Reward + "G";
-        QuestText.text = Text;
+        int shipsToDestroy = Random.Range(1, 2);
+        int bonusReward = Random.Range(50, 101);
+        int reward = (shipsToDestroy * 25) + bonusReward;
+        BonusRewardQuest = bonusReward;
+        RewardQuest = reward;
+        ShipsToDestroyQuest = shipsToDestroy;
+        string text = "Destroy " + shipsToDestroy + " pirate ships for " + reward + "G";
+        this.QuestText.text = text;
     }
 }

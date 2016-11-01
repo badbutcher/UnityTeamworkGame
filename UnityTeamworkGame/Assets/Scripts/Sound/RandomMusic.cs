@@ -14,11 +14,7 @@ public class RandomMusic : MonoBehaviour
 
     void Start()
     {
-        //if (!(SceneManager.GetActiveScene().buildIndex == 0))
-        //{
-            this.StartCoroutine(this.RandomSound());
-        //}
-
+        this.StartCoroutine(this.RandomSound());
         this.source.volume = SoundSave.CurrentMusicValue;
     }
 
@@ -26,9 +22,9 @@ public class RandomMusic : MonoBehaviour
     {
         while (true)
         {
-            int Rnd = Random.Range(0, this.Sounds.Length);
-            this.source.PlayOneShot(this.Sounds[Rnd]);
-            yield return new WaitForSeconds(240);  
+            int rnd = Random.Range(0, this.Sounds.Length);
+            this.source.PlayOneShot(this.Sounds[rnd]);
+            yield return new WaitForSeconds(240f);
         }
     }
 }

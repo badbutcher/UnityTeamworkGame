@@ -20,14 +20,14 @@ public class PirateCannon : MonoBehaviour
         this.Source.volume = SoundSave.CurrentSoundEffectsValue;
         var dir = this.Player.transform.position - this.transform.position;
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        this.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        this.transform.rotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
     }
 
     IEnumerator ShotRandom()
     {
         while (!PlayerStats.IsDead)
         {
-            yield return new WaitForSeconds(Random.Range(1, 1));
+            yield return new WaitForSeconds(Random.Range(1f, 1f));
             Rigidbody2D cannon;
             cannon = Instantiate(this.CannonBalls, this.Cannon.position, this.Cannon.rotation) as Rigidbody2D;
             cannon.AddForce(this.Cannon.right * 50f);

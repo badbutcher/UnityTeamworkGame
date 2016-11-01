@@ -6,19 +6,19 @@ public class PlayerStats : MonoBehaviour
 {
     public static bool IsDead;
     public static float PlayerMoveSpeed = 0.5f;
-    public static float PlayerHealth = 100;
-    public static float PlayerMaxHealth = 100;
-    public static float PlayerCannonBalls = 25;
-    public static float PlayerMaxCannonBalls = 25;
-    public static float PlayerGold = 1000;
-    public static float PirateMap = 0;
+    public static float PlayerHealth = 100f;
+    public static float PlayerMaxHealth = 100f;
+    public static float PlayerCannonBalls = 25f;
+    public static float PlayerMaxCannonBalls = 25f;
+    public static float PlayerGold = 1000f;
+    public static float PirateMap = 0f;
     public static bool QuestIsActive;
-    public bool isInShop;
-    private bool TreasureFound;
+    public bool IsInShop;
+    private bool treasureFound;
     public GameObject Crosshair;
     public GameObject Shop;
-    public string currentIsland;
-    public static int questShipsKilledCounter;
+    public string CurrentIsland;
+    public static int QuestShipsKilledCounter;
 
     public Animator Animator;
     private AudioSource source;
@@ -33,20 +33,20 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
-        if ((SceneManager.GetActiveScene().buildIndex == 2))
+        if ((SceneManager.GetActiveScene().buildIndex == 2f))
         {
-            Crosshair.SetActive(true);
+            this.Crosshair.SetActive(true);
         }
         else
         {
-            Crosshair.SetActive(false);
+            this.Crosshair.SetActive(false);
         }
     }
 
     void Update()
     {
         this.source.volume = SoundSave.CurrentSoundEffectsValue;
-        if (PlayerHealth <= 0 && IsDead)
+        if (PlayerHealth <= 0f && IsDead)
         {
             IsDead = true;
             this.source.PlayOneShot(this.DieSound);
@@ -56,22 +56,22 @@ public class PlayerStats : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        currentIsland = col.collider.name;
+        this.CurrentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
         {
-            PlayerHealth -= 5;
+            PlayerHealth -= 5f;
         }
 
         if (col.gameObject.tag == "Terrain")
         {
-            PlayerHealth -= 5;
-            source.PlayOneShot(HitLand);
+            PlayerHealth -= 5f;
+            this.source.PlayOneShot(this.HitLand);
         }
 
         if (col.gameObject.tag == "Dock")
         {
-            Shop.SetActive(true);
-            isInShop = true;
+            this.Shop.SetActive(true);
+            this.IsInShop = true;
             this.source.PlayOneShot(this.WelcomeSound);
         }
     }
@@ -81,13 +81,13 @@ public class PlayerStats : MonoBehaviour
         if (col.gameObject.tag == "PirateCannonBall")
         {
             MonoBehaviour.Destroy(col.gameObject);
-            PlayerHealth -= 10;
+            PlayerHealth -= 10f;
         }
 
-        if (col.gameObject.name == "Treasure" && PirateMap == 5 && !TreasureFound)
+        if (col.gameObject.name == "Treasure" && PirateMap == 5f && !this.treasureFound)
         {
-            PlayerGold += 1000;
-            TreasureFound = true;
+            PlayerGold += 1000f;
+            this.treasureFound = true;
         }
     }
 }

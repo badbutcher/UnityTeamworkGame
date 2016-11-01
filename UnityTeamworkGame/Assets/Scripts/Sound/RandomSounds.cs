@@ -26,9 +26,9 @@ public class RandomSounds : MonoBehaviour
     {
         while (true)
         {
-            int Rnd = Random.Range(0, this.Sounds.Length);
+            int rnd = Random.Range(0, this.Sounds.Length);
             yield return new WaitForSeconds(Random.Range(1, 3));
-            this.source.PlayOneShot(this.Sounds[Rnd]);
+            this.source.PlayOneShot(this.Sounds[rnd]);
         }
     }
 }

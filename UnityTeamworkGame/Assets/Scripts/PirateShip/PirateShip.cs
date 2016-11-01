@@ -12,7 +12,7 @@ public class PirateShip : MonoBehaviour
 
     private void Start()
     {
-        this.Health = 20;
+        this.Health = 20f;
         this.Source = this.GetComponent<AudioSource>();
     }
 
@@ -25,7 +25,7 @@ public class PirateShip : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            this.Health -= 5;
+            this.Health -= 5f;
         }
     }
 
@@ -34,7 +34,7 @@ public class PirateShip : MonoBehaviour
         if (col.gameObject.tag == "PlayerCannonBall")
         {
             MonoBehaviour.Destroy(col.gameObject);
-            this.Health -= 10;
+            this.Health -= 10f;
         }
     }
 
