@@ -7,12 +7,13 @@ public class PirateShip : MonoBehaviour
     public AudioSource Source;
     public AudioClip[] HitSounds;
     public AudioClip DieSound;
-    public float Health;
+    public float PirateShipHealth;
+    public static float PirateShipDmg;
     public Animator Ani;
 
     private void Start()
     {
-        this.Health = 20f;
+        this.PirateShipHealth = PlayerStats.PlayerMaxHealth / 5;
         this.Source = this.GetComponent<AudioSource>();
     }
 
@@ -25,7 +26,7 @@ public class PirateShip : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            this.Health -= 5f;
+            this.PirateShipHealth -= 5f;
         }
     }
 
@@ -34,7 +35,7 @@ public class PirateShip : MonoBehaviour
         if (col.gameObject.tag == "PlayerCannonBall")
         {
             MonoBehaviour.Destroy(col.gameObject);
-            this.Health -= 10f;
+            this.PirateShipHealth -= PlayerStats.PlayerDmg;
         }
     }
 

@@ -12,6 +12,7 @@ public class PlayerStats : MonoBehaviour
     public static float PlayerMaxCannonBalls = 25f;
     public static float PlayerGold = 1000f;
     public static float PirateMap = 0f;
+    public static float PlayerDmg = 5f;
     public static bool QuestIsActive;
     public bool IsInShop;
     private bool treasureFound;
@@ -59,7 +60,7 @@ public class PlayerStats : MonoBehaviour
         this.CurrentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
         {
-            PlayerHealth -= 5f;
+            PlayerHealth -= PlayerStats.PlayerDmg;
         }
 
         if (col.gameObject.tag == "Terrain")

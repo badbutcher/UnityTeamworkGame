@@ -27,7 +27,7 @@ public class PirateCannon : MonoBehaviour
     {
         while (!PlayerStats.IsDead)
         {
-            yield return new WaitForSeconds(Random.Range(1f, 1f));
+            yield return new WaitForSeconds(Random.Range(1f, 5f));
             Rigidbody2D cannon;
             cannon = Instantiate(this.CannonBalls, this.Cannon.position, this.Cannon.rotation) as Rigidbody2D;
             cannon.AddForce(this.Cannon.right * 50f);

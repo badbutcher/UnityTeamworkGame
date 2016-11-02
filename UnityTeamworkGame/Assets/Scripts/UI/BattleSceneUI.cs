@@ -33,7 +33,7 @@ public class BattleSceneUI : MonoBehaviour
             this.BattleLost();
         }
 
-        if (this.PirateShip.Health <= 0f && !this.battleWonCheck)
+        if (this.PirateShip.PirateShipHealth <= 0f && !this.battleWonCheck)
         {
             this.BattleWon();
         }
@@ -47,7 +47,6 @@ public class BattleSceneUI : MonoBehaviour
 
     void BattleWon()
     {
-
         this.battleWonCheck = true;
         this.PirateShip.Source.PlayOneShot(this.PirateShip.DieSound);
         this.PirateShip.Ani.Play("Explode");
@@ -101,6 +100,7 @@ public class BattleSceneUI : MonoBehaviour
                 PlayerStats.PirateMap++;
             }
         }
+
         Time.timeScale = 0f;
     }
 
