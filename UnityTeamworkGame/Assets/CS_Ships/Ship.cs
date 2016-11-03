@@ -4,18 +4,19 @@ using System.Linq;
 using UnityTeamworkGame;
 using UnityTeamworkGame.CS_Enums;
 using UnityTeamworkGame.CS_Interfaces;
+using UnityTeamworkGame.CS_Common;
 
 namespace UnityTeamworkGame.CS_Ships
 {
     public abstract class Ship : IDestroyable
     {
-        private const int MaxHitpoints = 200;
+        protected const int MaxHitpoints = 200;
+        protected const int InitialDamage = 40;        
 
-        private const int InitialDamage = 40;
-
-        int x, y;
+        protected int x, y;
 
         protected double fireTime;
+        protected bool isMoved;
 
         protected Ship(int x, int y)
         {
@@ -28,6 +29,7 @@ namespace UnityTeamworkGame.CS_Ships
             this.fireTime = 0;
             this.x = x;
             this.y = y;
+            this.isMoved = false;
         }
 
         public List<Projectile> Shells { get; set; }
@@ -47,6 +49,11 @@ namespace UnityTeamworkGame.CS_Ships
         public int Hitpoints { get; protected set; }
 
         public bool IsDestroyed { get; private set; }
+
+        public int X { get { return this.x; } }
+        public int Y { get { return this.y; } }
+
+        public bool IsMoved { get { return this.isMoved; } }
 
         public virtual void Move()
         {
@@ -89,10 +96,10 @@ namespace UnityTeamworkGame.CS_Ships
             }
         }
 
-        public void AdjustPos(int x, int y)
+        public void AdjustPosition(double xMap, double yMap)
         {
-            this.x = x;
-            this.y = y;
+            this.x = (int)Math.Round(xMap * Map.MAP_RATIO);
+            this.y = (int)Math.Round(yMap * Map.MAP_RATIO);
         }
     }
 }
