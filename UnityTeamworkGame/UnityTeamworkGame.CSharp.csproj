@@ -63,38 +63,34 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CS_Common\Map.cs" />
     <Compile Include="Assets\CS_Enums\Enum.cs" />
     <Compile Include="Assets\CS_Interfaces\IDestroyable.cs" />
-    <Compile Include="Assets\CS_MapObjects\Island.cs" />
     <Compile Include="Assets\CS_MapObjects\LandObject.cs" />
     <Compile Include="Assets\CS_MapObjects\MapObject.cs" />
     <Compile Include="Assets\CS_MapObjects\SeaObject.cs" />
     <Compile Include="Assets\CS_MapObjects\Settlement.cs" />
-    <Compile Include="Assets\CS_Ships\NPCShip.cs" />
     <Compile Include="Assets\CS_Ships\PlayerShip.cs" />
     <Compile Include="Assets\CS_Ships\Projectile.cs" />
     <Compile Include="Assets\CS_Ships\Ship.cs" />
-    <Compile Include="Assets\Scripts\MainMenuButtons.cs" />
-    <Compile Include="Assets\Scripts\MainMenuParallaxScrolling.cs" />
-    <Compile Include="Assets\Scripts\RandomMusic.cs" />
-    <Compile Include="Assets\Scripts\RandomSounds.cs" />
-    <Compile Include="Assets\Scripts\ShipMove.cs" />
-    <Compile Include="Assets\Scripts\ShopButtons.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\SoundSave.cs" />
-    <Compile Include="Assets\Test.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\CS_Resources\map.txt" />
+    <Compile Include="Assets\Scripts\CannonBallLife.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\PirateShip\PirateCannon.cs" />
+    <Compile Include="Assets\Scripts\PirateShip\PirateMove.cs" />
+    <Compile Include="Assets\Scripts\PirateShip\PirateShip.cs" />
+    <Compile Include="Assets\Scripts\PlayerShip\PlayerCannons.cs" />
+    <Compile Include="Assets\Scripts\PlayerShip\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\PlayerShip\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Sound\RandomMusic.cs" />
+    <Compile Include="Assets\Scripts\Sound\RandomSounds.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />
+    <Compile Include="Assets\Scripts\UI\BattleSceneUI.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuButtons.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuParallaxScrolling.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\PlayerUI.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopButtons.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
