@@ -36,6 +36,7 @@ public class PirateShip : MonoBehaviour
         {
             MonoBehaviour.Destroy(col.gameObject);
             this.PirateShipHealth -= PlayerStats.PlayerDmg;
+            RandomHitSounds();
         }
     }
 

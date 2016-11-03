@@ -8,6 +8,7 @@ public class PirateCannon : MonoBehaviour
     public Rigidbody2D CannonBalls;
     public Transform Cannon;
     public GameObject Player;
+    public ParticleSystem shotEffect;
 
     private void Start()
     {
@@ -28,11 +29,19 @@ public class PirateCannon : MonoBehaviour
         while (!PlayerStats.IsDead)
         {
             yield return new WaitForSeconds(Random.Range(1f, 5f));
+            StartCoroutine(StopShotEffect());
             Rigidbody2D cannon;
             cannon = Instantiate(this.CannonBalls, this.Cannon.position, this.Cannon.rotation) as Rigidbody2D;
             cannon.AddForce(this.Cannon.right * 50f);
             this.RandomShotSounds();
         }
+    }
+
+    IEnumerator StopShotEffect()
+    {
+        shotEffect.Play();
+        yield return new WaitForSeconds(0.1f);
+        shotEffect.Stop();
     }
 
     private void RandomShotSounds()

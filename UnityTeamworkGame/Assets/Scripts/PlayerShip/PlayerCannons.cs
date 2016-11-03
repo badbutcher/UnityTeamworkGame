@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerCannons : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerCannons : MonoBehaviour
     public static float ShotCooldown = 0.5f;
     public static float MaxCannons = 2f;
     public PlayerStats PlayerStats;
+    public ParticleSystem shotEffect;
 
     private void Start()
     {
@@ -25,6 +27,7 @@ public class PlayerCannons : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && Time.timeScale != 0f && Time.time > this.CanShot + ShotCooldown && PlayerStats.PlayerCannonBalls > 0f)
         {
+            StartCoroutine(StopShotEffect());
             Rigidbody2D cannon;
             for (int i = 0; i < this.Cannons.Length - MaxCannons; i++)
             {
@@ -35,6 +38,13 @@ public class PlayerCannons : MonoBehaviour
                 this.CanShot = Time.time;
             }
         }
+    }
+
+    IEnumerator StopShotEffect()
+    {
+        shotEffect.Play();
+        yield return new WaitForSeconds(0.1f);
+        shotEffect.Stop();
     }
 
     private void RandomShotSounds()

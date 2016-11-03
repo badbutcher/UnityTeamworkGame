@@ -23,6 +23,7 @@ public class PlayerStats : MonoBehaviour
 
     public Animator Animator;
     private AudioSource source;
+    public AudioClip[] HitSounds;
     public AudioClip DieSound;
     public AudioClip HitLand;
     public AudioClip WelcomeSound;
@@ -81,6 +82,7 @@ public class PlayerStats : MonoBehaviour
     {
         if (col.gameObject.tag == "PirateCannonBall")
         {
+            RandomHitSounds();
             MonoBehaviour.Destroy(col.gameObject);
             PlayerHealth -= 10f;
         }
@@ -90,5 +92,11 @@ public class PlayerStats : MonoBehaviour
             PlayerGold += 1000f;
             this.treasureFound = true;
         }
+    }
+
+    private void RandomHitSounds()
+    {
+        int rnd = Random.Range(0, this.HitSounds.Length);
+        this.source.PlayOneShot(this.HitSounds[rnd]);
     }
 }
