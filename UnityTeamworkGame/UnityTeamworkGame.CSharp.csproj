@@ -65,12 +65,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CS_Common\Map.cs" />
     <Compile Include="Assets\CS_Enums\Enum.cs" />
     <Compile Include="Assets\CS_Interfaces\IDestroyable.cs" />
     <Compile Include="Assets\CS_MapObjects\LandObject.cs" />
     <Compile Include="Assets\CS_MapObjects\MapObject.cs" />
     <Compile Include="Assets\CS_MapObjects\SeaObject.cs" />
     <Compile Include="Assets\CS_MapObjects\Settlement.cs" />
+    <Compile Include="Assets\CS_Ships\NPCShip.cs" />
     <Compile Include="Assets\CS_Ships\PlayerShip.cs" />
     <Compile Include="Assets\CS_Ships\Projectile.cs" />
     <Compile Include="Assets\CS_Ships\Ship.cs" />
@@ -91,6 +93,9 @@
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\UI\ShopButtons.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\CS_Resources\map.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
