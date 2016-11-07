@@ -35,6 +35,11 @@ public class BattleSceneUI : MonoBehaviour
 
         if (this.PirateShip.PirateShipHealth <= 0f && !this.battleWonCheck)
         {
+            if (PlayerStats.QuestIsActive)
+            {
+                PlayerStats.QuestShipsKilledCounter++;
+            }
+
             this.BattleWon();
         }
     }
@@ -99,6 +104,11 @@ public class BattleSceneUI : MonoBehaviour
             {
                 PlayerStats.PirateMap++;
             }
+        }
+
+        if (PlayerStats.PlayerHealth > PlayerStats.PlayerMaxHealth)
+        {
+            PlayerStats.PlayerHealth = PlayerStats.PlayerMaxHealth;
         }
 
         Time.timeScale = 0f;

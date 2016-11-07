@@ -14,6 +14,7 @@ public class PirateShip : MonoBehaviour
     private void Start()
     {
         this.PirateShipHealth = PlayerStats.PlayerMaxHealth / 5;
+        PirateShipDmg = Mathf.Floor(PlayerStats.PlayerDmg * 1.25f);
         this.Source = this.GetComponent<AudioSource>();
     }
 

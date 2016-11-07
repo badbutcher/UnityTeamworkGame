@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace QuestSystem
 {
@@ -9,8 +8,7 @@ namespace QuestSystem
         private string description;
         private bool isComplete;
 
-        private Location targetLocation;    //zone, 2d cord, 3d cord
-
+        //private Location targetLocation;    //zone, 2d cord, 3d cord
 
         public string Title
         {
@@ -36,14 +34,13 @@ namespace QuestSystem
             }
         }
 
-
         public void CheckProgress()
         {
             //if players location is equal to our target location then we are complete and we have finished objective
-            if (Player.GetLocation.Compare(targetLocation))
-                isComplete = true;
-            else
-                isComplete = false;
+            //if (Player.GetLocation.Compare(targetLocation))
+            //    isComplete = true;
+            //else
+            //    isComplete = false;
         }
 
         public void UpdateProgress()

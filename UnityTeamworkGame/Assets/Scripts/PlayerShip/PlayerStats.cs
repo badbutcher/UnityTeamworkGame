@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     public static float PlayerMaxCannonBalls = 25f;
     public static float PlayerGold = 1000f;
     public static float PirateMap = 0f;
-    public static float PlayerDmg = 5f;
+    public static float PlayerDmg = 10f;
     public static bool QuestIsActive;
     public bool IsInShop;
     private bool treasureFound;
@@ -35,6 +35,7 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
+        PlayerDmg = 10;
         if ((SceneManager.GetActiveScene().buildIndex == 2f))
         {
             this.Crosshair.SetActive(true);
@@ -43,6 +44,8 @@ public class PlayerStats : MonoBehaviour
         {
             this.Crosshair.SetActive(false);
         }
+
+        PlayerDmg = PlayerDmg- PlayerCannons.MaxCannons + 1;
     }
 
     void Update()
@@ -61,7 +64,7 @@ public class PlayerStats : MonoBehaviour
         this.CurrentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
         {
-            PlayerHealth -= PlayerStats.PlayerDmg;
+            PlayerHealth -= 5f;
         }
 
         if (col.gameObject.tag == "Terrain")
@@ -84,7 +87,7 @@ public class PlayerStats : MonoBehaviour
         {
             RandomHitSounds();
             MonoBehaviour.Destroy(col.gameObject);
-            PlayerHealth -= 10f;
+            PlayerHealth -= PirateShip.PirateShipDmg;
         }
 
         if (col.gameObject.name == "Treasure" && PirateMap == 5f && !this.treasureFound)

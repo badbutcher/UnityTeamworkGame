@@ -212,7 +212,6 @@ public class ShopButtons : MonoBehaviour
     {
         if (PlayerStats.PlayerHealth > PlayerStats.PlayerMaxHealth)
         {
-            this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerHealth = PlayerStats.PlayerMaxHealth;
         }
     }

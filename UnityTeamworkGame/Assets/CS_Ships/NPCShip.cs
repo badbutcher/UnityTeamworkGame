@@ -7,7 +7,6 @@ using UnityTeamworkGame.CS_Interfaces;
 using UnityTeamworkGame.CS_Ships;
 using UnityTeamworkGame.CS_Common;
 
-
 namespace UnityTeamworkGame.CS_Ships
 {
     public class NpcShip : Ship, IDestroyable

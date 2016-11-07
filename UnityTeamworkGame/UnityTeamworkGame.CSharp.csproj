@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -84,6 +82,16 @@
     <Compile Include="Assets\Scripts\PlayerShip\PlayerCannons.cs" />
     <Compile Include="Assets\Scripts\PlayerShip\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlayerShip\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuest.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuestIdentifier.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuestObjective.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuestText.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Objectives\CollectionObjective.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Objectives\LocationObjective.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Quest.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\QuestIdentifier.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\QuestText.cs" />
+    <Compile Include="Assets\Scripts\Quest System\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\Sound\RandomMusic.cs" />
     <Compile Include="Assets\Scripts\Sound\RandomSounds.cs" />
     <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />
@@ -93,9 +101,6 @@
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\UI\ShopButtons.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\CS_Resources\map.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

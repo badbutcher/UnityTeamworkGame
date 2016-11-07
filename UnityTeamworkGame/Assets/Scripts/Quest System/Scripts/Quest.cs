@@ -42,15 +42,12 @@ namespace QuestSystem
         {
             for (int i = 0; i < objectives.Count; i++)
             {
-                if (!objectives[i].IsComplete && objectives[i].IsBonus == false)
-                {
-                    return false;
-                } 
+                //if (!objectives[i].IsComplete && objectives[i].IsBonus == false)
+                //{
+                //    return false;
+                //} 
             }
             return true;    //get reward!! fire on complete event!
         }
-
-        
     }
 }
-

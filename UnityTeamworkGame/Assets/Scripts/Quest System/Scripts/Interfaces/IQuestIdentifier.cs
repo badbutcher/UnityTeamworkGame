@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-namespace QuestSystem
+﻿namespace QuestSystem
 {
     public interface IQuestIdentifier
     {

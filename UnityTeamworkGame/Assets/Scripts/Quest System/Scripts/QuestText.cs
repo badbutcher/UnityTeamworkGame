@@ -1,6 +1,5 @@
 ﻿namespace QuestSystem
 {
-
     public class QuestText : IQuestText
     {
         private string title;
@@ -39,13 +38,5 @@
                 return title;
             }
         }
-
-   
-
-
-
     }
-
-
-
 }

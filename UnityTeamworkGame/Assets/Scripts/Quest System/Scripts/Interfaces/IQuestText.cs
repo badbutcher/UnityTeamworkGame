@@ -8,4 +8,3 @@
         string Dialog { get; }
     }
 }
-
