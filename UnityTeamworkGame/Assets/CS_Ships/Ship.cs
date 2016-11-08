@@ -96,10 +96,11 @@ namespace UnityTeamworkGame.CS_Ships
             }
         }
 
-        public void AdjustPosition(double xMap, double yMap)
+        public void AdjustPosition(float xMap, float yMap)
         {
-            this.x = (int)Math.Round(xMap * Map.MAP_RATIO);
+            this.x = (int)Math.Round(xMap * Map.MAP_RATIO );
             this.y = (int)Math.Round(yMap * Map.MAP_RATIO);
         }
+
     }
 }

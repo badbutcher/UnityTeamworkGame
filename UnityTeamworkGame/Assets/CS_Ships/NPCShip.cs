@@ -43,7 +43,7 @@ namespace UnityTeamworkGame.CS_Ships
 
         public bool IsInCombat { get; set; }        
         
-        private void Movement(Ship playership, Map map, out int[] nextPositionCoords)
+        /*private void Movement(Ship playership, Map map, out int[] nextPositionCoords)
         {
             nextPositionCoords = new int[2];
             int[] target = new int[2];
@@ -58,7 +58,7 @@ namespace UnityTeamworkGame.CS_Ships
                     int[] start = new int[2];
                     start[0] = (int)this.X;
                     start[1] = (int)this.Y;
-                    map.GetPathToTarget(start, target, this.path);
+                    map.GetPathToTarget(start, target, out this.path);
                 }
             }
             else if (wasInRange || this.path.Count == 0)
@@ -81,9 +81,9 @@ namespace UnityTeamworkGame.CS_Ships
                 nextPositionCoords[0] = this.X;
                 nextPositionCoords[1] = this.Y;
             }         
-        }    
+        }    */
         
-        private void CheckInRange(double PlayerShipPositionX, double PlayerShipPositionY)
+        private void CheckInRange(float PlayerShipPositionX, float PlayerShipPositionY)
         {
             int distance = (int)Math.Sqrt(Math.Pow((PlayerShipPositionX - this.x), 2) + Math.Pow((PlayerShipPositionY - this.y), 2));
             this.isInRange = distance <= DETECT_RANGE;

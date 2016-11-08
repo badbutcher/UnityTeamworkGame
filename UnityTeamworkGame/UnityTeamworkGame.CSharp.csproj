@@ -61,11 +61,18 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CS_Common\Map.cs" />
     <Compile Include="Assets\CS_Enums\Enum.cs" />
     <Compile Include="Assets\CS_Interfaces\IDestroyable.cs" />
+    <Compile Include="Assets\CS_MapObjects\Island.cs" />
     <Compile Include="Assets\CS_MapObjects\LandObject.cs" />
     <Compile Include="Assets\CS_MapObjects\MapObject.cs" />
     <Compile Include="Assets\CS_MapObjects\SeaObject.cs" />
@@ -101,6 +108,9 @@
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\UI\ShopButtons.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\CS_Resources\map.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

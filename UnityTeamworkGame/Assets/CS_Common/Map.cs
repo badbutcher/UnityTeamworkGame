@@ -1,22 +1,30 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace UnityTeamworkGame.CS_Common
 {
-    class Map
+    class Map:MonoBehaviour
     {
-        public const int MAP_WIDTH = 200;
-        public const int MAP_HEIGHT = 200;
-        public const double MAP_RATIO = 10;
+        public const int MAP_WIDTH = 350;
+        public const int MAP_HEIGHT = 350;
+        public const float MAP_RATIO = 10;
+        public const float UNITY_COORDS_CONV = 17.5f;
+        public const float DETECT_RANGE = 10f;
         private const string MAP_FILE_NAME = "map";
 
-        private int[,,] mapFields;
-        static readonly bool[,] obstacles;
+        private static int[,,] mapFields;
+        private static bool[,] obstacles;
 
-        public Map()
+        void Start()
+        {
+            Map.mapFields = new int[MAP_WIDTH, MAP_HEIGHT, 6]; //[0] = 0 - doesn't belong to list; 1 - belongs to the open list; 2 - belongs to teh closed list
+                                                                //[1] - G (movement cost from start); [2] - H (estimated moevement cost to target); [3] F = G+H; [4] - Parent X; [5]  -Parent Y            
+            Map.obstacles = Map.LoadMapFromFile();
+        }
+        /*public Map()
         {
             this.mapFields = new int[MAP_WIDTH, MAP_HEIGHT, 6]; //[0] = 0 - doesn't belong to list; 1 - belongs to the open list; 2 - belongs to teh closed list
             //[1] - G (movement cost from start); [2] - H (estimated moevement cost to target); [3] F = G+H; [4] - Parent X; [5]  -Parent Y            
@@ -25,9 +33,9 @@ namespace UnityTeamworkGame.CS_Common
         static Map()
         {
             Map.obstacles = Map.LoadMapFromFile();
-        }
+        }*/
 
-        public void GetPathToTarget(int[] start, int[] target, List<int[]> path)  //return list with consequative coordinates
+        public static void GetPathToTarget(int[] start, int[] target, out List<float[]> path)  //return list with consequative coordinates
         {
 
             List<int[]> openList = new List<int[]>(); //sorted list!
@@ -37,13 +45,13 @@ namespace UnityTeamworkGame.CS_Common
             {
                 for (int j = 0; j < MAP_HEIGHT; j++)
                 {
-                    this.mapFields[i, j, 0] = 0;
-                    this.mapFields[i, j, 1] = int.MaxValue;
-                    this.mapFields[i, j, 2] = int.MaxValue;
-                    this.mapFields[i, j, 3] = int.MaxValue;
-                    this.mapFields[i, j, 4] = 0;
-                    this.mapFields[i, j, 5] = 0;
-                }
+                    Map.mapFields[i, j, 0] = 0;
+                    Map.mapFields[i, j, 1] = int.MaxValue;
+                    Map.mapFields[i, j, 2] = int.MaxValue;
+                    Map.mapFields[i, j, 3] = int.MaxValue;
+                    Map.mapFields[i, j, 4] = 0;
+                    Map.mapFields[i, j, 5] = 0;
+                }   
             }
 
             // add start position to the open list
@@ -125,13 +133,13 @@ namespace UnityTeamworkGame.CS_Common
                     }
                 }
             }
+            path = new List<float[]>();
             if (currentPos[0] == target[0] && currentPos[1] == target[1])
             {
-                path = new List<int[]>();
                 int currentX = target[0], currentY = target[1];
                 while (currentX != start[0] || currentY != start[1])
                 {
-                    int[] pathNode = new int[2];
+                    float[] pathNode = new float[2];
                     pathNode[0] = currentX;
                     pathNode[1] = currentY;
                     path.Add(pathNode);
@@ -157,6 +165,23 @@ namespace UnityTeamworkGame.CS_Common
                 y++;
             }
             return map;
+        }
+
+
+        public static int[] ConvertLocationToCoord(float[] location)
+        {
+            int[] coord = new int[2];
+            coord[0] = (int)Math.Round((location[0] + UNITY_COORDS_CONV) * MAP_RATIO);
+            coord[1] = (int)Math.Round((location[1] + UNITY_COORDS_CONV) * MAP_RATIO);
+            return coord;
+        }
+
+        public static float[] ConvertCoordToLocation(int[] coord)
+        {
+            float[] location = new float[2];
+            location[0] = (float)(coord[0] / MAP_RATIO - UNITY_COORDS_CONV);
+            location[1] = (float)(coord[1] / MAP_RATIO - UNITY_COORDS_CONV);
+            return location;
         }
     }
 }
