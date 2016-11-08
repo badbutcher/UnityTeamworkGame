@@ -7,12 +7,12 @@ public class RandomSounds : MonoBehaviour
     private AudioSource source;
     public AudioClip[] Sounds;
 
-    void Awake()
+    private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
         if (!(SceneManager.GetActiveScene().buildIndex == 0))
         {
@@ -22,7 +22,7 @@ public class RandomSounds : MonoBehaviour
         this.source.volume = SoundSave.CurrentSoundEffectsValue;
     }
 
-    IEnumerator RandomSound()
+    private IEnumerator RandomSound()
     {
         while (true)
         {

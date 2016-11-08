@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class PirateShip : MonoBehaviour
 {
@@ -11,11 +9,15 @@ public class PirateShip : MonoBehaviour
     public static float PirateShipDmg;
     public Animator Ani;
 
+    private void Awake()
+    {
+        this.Source = this.GetComponent<AudioSource>();
+    }
+
     private void Start()
     {
         this.PirateShipHealth = PlayerStats.PlayerMaxHealth / 5;
         PirateShipDmg = Mathf.Floor(PlayerStats.PlayerDmg * 1.25f);
-        this.Source = this.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -23,7 +25,7 @@ public class PirateShip : MonoBehaviour
         this.Source.volume = SoundSave.CurrentSoundEffectsValue;
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -31,13 +33,18 @@ public class PirateShip : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "PlayerCannonBall")
         {
             MonoBehaviour.Destroy(col.gameObject);
             this.PirateShipHealth -= PlayerStats.PlayerDmg;
             RandomHitSounds();
+
+            if (PirateShipHealth <= 0)
+            {
+                PirateShipHealth = 0;
+            }
         }
     }
 

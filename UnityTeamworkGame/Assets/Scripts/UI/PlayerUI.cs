@@ -17,7 +17,7 @@ public class PlayerUI : MonoBehaviour
     public GameObject[] MapParts;
     public Text CurrentQuest;
 
-    void Start()
+    private void Start()
     {
         this.QuestPanel.SetActive(false);
         this.MapPanel.SetActive(false);
@@ -31,7 +31,7 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         EnemyHealthText.text = PirateShip.PirateShipHealth.ToString();
         this.PlayerGoldText.text = PlayerStats.PlayerGold.ToString();

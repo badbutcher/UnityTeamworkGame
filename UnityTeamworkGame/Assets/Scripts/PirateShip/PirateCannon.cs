@@ -10,9 +10,13 @@ public class PirateCannon : MonoBehaviour
     public GameObject Player;
     public ParticleSystem shotEffect;
 
-    private void Start()
+    private void Awake()
     {
         this.Source = this.GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
         this.StartCoroutine(this.ShotRandom());
     }
 
@@ -24,7 +28,7 @@ public class PirateCannon : MonoBehaviour
         this.transform.rotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
     }
 
-    IEnumerator ShotRandom()
+    private IEnumerator ShotRandom()
     {
         while (!PlayerStats.IsDead)
         {
@@ -37,7 +41,7 @@ public class PirateCannon : MonoBehaviour
         }
     }
 
-    IEnumerator StopShotEffect()
+    private IEnumerator StopShotEffect()
     {
         shotEffect.Play();
         yield return new WaitForSeconds(0.1f);

@@ -13,7 +13,7 @@ public class PlayerCannons : MonoBehaviour
     public PlayerStats PlayerStats;
     public ParticleSystem shotEffect;
 
-    private void Start()
+    private void Awake()
     {
         this.Source = this.GetComponent<AudioSource>();
     }
@@ -40,7 +40,7 @@ public class PlayerCannons : MonoBehaviour
         }
     }
 
-    IEnumerator StopShotEffect()
+    private IEnumerator StopShotEffect()
     {
         shotEffect.Play();
         yield return new WaitForSeconds(0.1f);

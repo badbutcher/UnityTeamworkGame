@@ -19,7 +19,7 @@ public class BattleSceneUI : MonoBehaviour
     public string enemyQuestName;
     private QuestManager theQM;
 
-    void Start()
+    private void Start()
     {
         this.battleWonCheck = false;
         this.battleLostCheck = false;
@@ -30,7 +30,7 @@ public class BattleSceneUI : MonoBehaviour
         theQM = FindObjectOfType<QuestManager>();
     }
 
-    void Update()
+    private void Update()
     {
         this.Source.volume = SoundSave.CurrentSoundEffectsValue;
         if (PlayerStats.PlayerHealth <= 0f && !this.battleLostCheck)
@@ -50,13 +50,14 @@ public class BattleSceneUI : MonoBehaviour
         }
     }
 
-    void BattleLost()
+    private void BattleLost()
     {
+        PlayerStats.Animator.Play("Explode");
         this.battleLostCheck = true;
         this.StartCoroutine(this.BattleLostScreenShow());
     }
 
-    void BattleWon()
+    private void BattleWon()
     {
         this.battleWonCheck = true;
         this.PirateShip.Source.PlayOneShot(this.PirateShip.DieSound);
@@ -65,7 +66,7 @@ public class BattleSceneUI : MonoBehaviour
         this.StartCoroutine(this.BattleWonScreenShow());
     }
 
-    IEnumerator BattleLostScreenShow()
+    private IEnumerator BattleLostScreenShow()
     {
         yield return new WaitForSeconds(2f);
         this.BattleLostScreen.SetActive(true);
@@ -73,7 +74,7 @@ public class BattleSceneUI : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    IEnumerator BattleWonScreenShow()
+    private IEnumerator BattleWonScreenShow()
     {
         int randomGold = Random.Range(25, 300);
         int randomHealth = Random.Range(5, 20);

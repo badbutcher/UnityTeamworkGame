@@ -8,14 +8,10 @@ public class MainMenuButtons : MonoBehaviour
 
     public void StartGame()
     {
+        ResetGame();
         EnemyManager.Enemies.Clear();
         PlayerStats.IsDead = false;
         SceneManager.LoadSceneAsync("MainScene");
-    }
-
-    public void ContinueGame()
-    {
-        ////TODO 
     }
 
     public void OpenOptions()
@@ -45,6 +41,7 @@ public class MainMenuButtons : MonoBehaviour
 
     private void ResetGame()
     {
+        PlayerStats.IsDead = false;
         PlayerStats.PlayerMoveSpeed = 0.5f;
         PlayerStats.PlayerHealth = 100f;
         PlayerStats.PlayerMaxHealth = 100f;

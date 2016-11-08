@@ -26,7 +26,7 @@ public class ShopButtons : MonoBehaviour
     public static int RewardQuest;
     public static int ShipsToDestroyQuest;
 
-    void Awake()
+    private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
@@ -43,6 +43,7 @@ public class ShopButtons : MonoBehaviour
 
     private void Update()
     {
+        this.source.volume = SoundSave.CurrentSoundEffectsValue;
         this.PlayerGoldText.text = " - " + PlayerStats.PlayerGold;
         this.PlayerHpText.text = " - " + PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
         this.PlayerCannonBallsText.text = " - " + PlayerStats.PlayerCannonBalls + " / " + PlayerStats.PlayerMaxCannonBalls;

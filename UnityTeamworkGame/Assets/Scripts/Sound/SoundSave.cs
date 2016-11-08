@@ -8,13 +8,13 @@ public class SoundSave : MonoBehaviour
     public static float CurrentSoundEffectsValue;
     public static float CurrentMusicValue;
 
-    void Start()
+    private void Start()
     {
         this.Effects.value = CurrentSoundEffectsValue;
         this.Music.value = CurrentMusicValue;
     }
 
-    void Update()
+    private void Update()
     {
         CurrentSoundEffectsValue = this.Effects.value;
         CurrentMusicValue = this.Music.value;

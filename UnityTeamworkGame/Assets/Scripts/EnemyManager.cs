@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class EnemyManager : MonoBehaviour
@@ -8,7 +7,7 @@ public class EnemyManager : MonoBehaviour
     public static string Enemy;
     private float totalEnemyCount = 5;
 
-    void Start()
+    private void Start()
     {
         if (Enemies.Count >= totalEnemyCount)
         {

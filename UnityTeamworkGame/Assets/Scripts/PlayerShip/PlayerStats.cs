@@ -20,20 +20,20 @@ public class PlayerStats : MonoBehaviour
     public GameObject Shop;
     public string CurrentIsland;
     public static int QuestShipsKilledCounter;
+    public GameObject DontHitIslandsScreen;
 
     public Animator Animator;
     private AudioSource source;
     public AudioClip[] HitSounds;
     public AudioClip DieSound;
     public AudioClip HitLand;
-    public AudioClip WelcomeSound;
 
-    void Awake()
+    private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
         PlayerDmg = 10;
         if ((SceneManager.GetActiveScene().buildIndex == 2f))
@@ -46,20 +46,26 @@ public class PlayerStats : MonoBehaviour
         }
 
         PlayerDmg = PlayerDmg- PlayerCannons.MaxCannons + 1;
+        DontHitIslandsScreen.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
         this.source.volume = SoundSave.CurrentSoundEffectsValue;
         if (PlayerHealth <= 0f && IsDead)
         {
             IsDead = true;
             this.source.PlayOneShot(this.DieSound);
-            this.Animator.Play("Explode");
+        }
+
+        if (PlayerHealth <= 0f && SceneManager.GetActiveScene().buildIndex == 1f)
+        {
+            IsDead = true;
+            DontHitIslandsScreen.SetActive(true);
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         this.CurrentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
@@ -77,11 +83,10 @@ public class PlayerStats : MonoBehaviour
         {
             this.Shop.SetActive(true);
             this.IsInShop = true;
-            this.source.PlayOneShot(this.WelcomeSound);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "PirateCannonBall")
         {

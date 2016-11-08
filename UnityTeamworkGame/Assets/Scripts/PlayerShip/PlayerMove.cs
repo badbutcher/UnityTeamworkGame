@@ -100,7 +100,7 @@ public class PlayerMove : MonoBehaviour
         this.DownRight.SetActive(false);
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "PirateShip" && this.Scene.name == "MainScene")
         {
