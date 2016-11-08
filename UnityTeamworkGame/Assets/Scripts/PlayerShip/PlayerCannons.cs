@@ -40,7 +40,11 @@ public class PlayerCannons : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     private IEnumerator StopShotEffect()
+=======
+    IEnumerator StopShotEffect()
+>>>>>>> origin/master
     {
         shotEffect.Play();
         yield return new WaitForSeconds(0.1f);

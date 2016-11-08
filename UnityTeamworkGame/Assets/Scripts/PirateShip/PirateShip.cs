@@ -11,6 +11,11 @@ public class PirateShip : MonoBehaviour
 
     private void Awake()
     {
+<<<<<<< HEAD
+=======
+        this.PirateShipHealth = PlayerStats.PlayerMaxHealth / 5;
+        PirateShipDmg = Mathf.Floor(PlayerStats.PlayerDmg * 1.25f);
+>>>>>>> origin/master
         this.Source = this.GetComponent<AudioSource>();
     }
 
@@ -40,11 +45,14 @@ public class PirateShip : MonoBehaviour
             MonoBehaviour.Destroy(col.gameObject);
             this.PirateShipHealth -= PlayerStats.PlayerDmg;
             RandomHitSounds();
+<<<<<<< HEAD
 
             if (PirateShipHealth <= 0)
             {
                 PirateShipHealth = 0;
             }
+=======
+>>>>>>> origin/master
         }
     }
 
