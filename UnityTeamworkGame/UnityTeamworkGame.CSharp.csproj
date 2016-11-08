@@ -61,18 +61,11 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CS_Common\Map.cs" />
     <Compile Include="Assets\CS_Enums\Enum.cs" />
     <Compile Include="Assets\CS_Interfaces\IDestroyable.cs" />
-    <Compile Include="Assets\CS_MapObjects\Island.cs" />
     <Compile Include="Assets\CS_MapObjects\LandObject.cs" />
     <Compile Include="Assets\CS_MapObjects\MapObject.cs" />
     <Compile Include="Assets\CS_MapObjects\SeaObject.cs" />
@@ -89,23 +82,10 @@
     <Compile Include="Assets\Scripts\PlayerShip\PlayerCannons.cs" />
     <Compile Include="Assets\Scripts\PlayerShip\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlayerShip\PlayerStats.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Quest Manager\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Quest Manager\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Quest Manager\Scripts\QuestObject.cs" />
     <Compile Include="Assets\Scripts\Quest Manager\Scripts\QuestTrigger.cs" />
-=======
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuest.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuestIdentifier.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuestObjective.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Interfaces\IQuestText.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Objectives\CollectionObjective.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Objectives\LocationObjective.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Quest.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\QuestIdentifier.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\QuestText.cs" />
-    <Compile Include="Assets\Scripts\Quest System\Scripts\Test.cs" />
->>>>>>> origin/master
     <Compile Include="Assets\Scripts\Sound\RandomMusic.cs" />
     <Compile Include="Assets\Scripts\Sound\RandomSounds.cs" />
     <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />

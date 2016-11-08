@@ -20,10 +20,8 @@ public class PlayerStats : MonoBehaviour
     public GameObject Shop;
     public string CurrentIsland;
     public static int QuestShipsKilledCounter;
-<<<<<<< HEAD
     public GameObject DontHitIslandsScreen;
-=======
->>>>>>> origin/master
+
 
     public Animator Animator;
     private AudioSource source;
@@ -49,10 +47,8 @@ public class PlayerStats : MonoBehaviour
         }
 
         PlayerDmg = PlayerDmg- PlayerCannons.MaxCannons + 1;
-<<<<<<< HEAD
         DontHitIslandsScreen.SetActive(false);
-=======
->>>>>>> origin/master
+
     }
 
     private void Update()
@@ -89,10 +85,6 @@ public class PlayerStats : MonoBehaviour
         {
             this.Shop.SetActive(true);
             this.IsInShop = true;
-<<<<<<< HEAD
-=======
-            this.source.PlayOneShot(this.WelcomeSound);
->>>>>>> origin/master
         }
     }
 

@@ -27,10 +27,8 @@ public class BattleSceneUI : MonoBehaviour
         this.BattleLostScreen.SetActive(false);
         this.Source = this.GetComponent<AudioSource>();
         Time.timeScale = 1f;
-<<<<<<< HEAD
         theQM = FindObjectOfType<QuestManager>();
-=======
->>>>>>> origin/master
+
     }
 
     private void Update()
@@ -43,10 +41,8 @@ public class BattleSceneUI : MonoBehaviour
 
         if (this.PirateShip.PirateShipHealth <= 0f && !this.battleWonCheck)
         {
-<<<<<<< HEAD
             theQM.enemyKilled = enemyQuestName;
-=======
->>>>>>> origin/master
+
             if (PlayerStats.QuestIsActive)
             {
                 PlayerStats.QuestShipsKilledCounter++;
