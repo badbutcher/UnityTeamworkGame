@@ -7,12 +7,12 @@ public class RandomSounds : MonoBehaviour
     private AudioSource source;
     public AudioClip[] Sounds;
 
-    void Awake()
+    private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
         if (!(SceneManager.GetActiveScene().buildIndex == 0))
         {
@@ -22,13 +22,13 @@ public class RandomSounds : MonoBehaviour
         this.source.volume = SoundSave.CurrentSoundEffectsValue;
     }
 
-    IEnumerator RandomSound()
+    private IEnumerator RandomSound()
     {
         while (true)
         {
-            int Rnd = Random.Range(0, this.Sounds.Length);
+            int rnd = Random.Range(0, this.Sounds.Length);
             yield return new WaitForSeconds(Random.Range(1, 3));
-            this.source.PlayOneShot(this.Sounds[Rnd]);
+            this.source.PlayOneShot(this.Sounds[rnd]);
         }
     }
 }

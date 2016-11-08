@@ -63,25 +63,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CS_Common\Map.cs" />
     <Compile Include="Assets\CS_Enums\Enum.cs" />
     <Compile Include="Assets\CS_Interfaces\IDestroyable.cs" />
     <Compile Include="Assets\CS_MapObjects\LandObject.cs" />
     <Compile Include="Assets\CS_MapObjects\MapObject.cs" />
     <Compile Include="Assets\CS_MapObjects\SeaObject.cs" />
     <Compile Include="Assets\CS_MapObjects\Settlement.cs" />
+    <Compile Include="Assets\CS_Ships\NPCShip.cs" />
     <Compile Include="Assets\CS_Ships\PlayerShip.cs" />
     <Compile Include="Assets\CS_Ships\Projectile.cs" />
     <Compile Include="Assets\CS_Ships\Ship.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Interfaces\IQuest.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Interfaces\IQuestIdentifier.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Interfaces\IQuestObjective.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Interfaces\IQuestText.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Objectives\CollectionObjective.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Objectives\LocationObjective.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Quest.cs" />
-    <Compile Include="Assets\Quest System\Scripts\QuestIdentifier.cs" />
-    <Compile Include="Assets\Quest System\Scripts\QuestText.cs" />
-    <Compile Include="Assets\Quest System\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\CannonBallLife.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\PirateShip\PirateCannon.cs" />
@@ -90,6 +82,10 @@
     <Compile Include="Assets\Scripts\PlayerShip\PlayerCannons.cs" />
     <Compile Include="Assets\Scripts\PlayerShip\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlayerShip\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Quest Manager\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Quest Manager\Scripts\QuestManager.cs" />
+    <Compile Include="Assets\Scripts\Quest Manager\Scripts\QuestObject.cs" />
+    <Compile Include="Assets\Scripts\Quest Manager\Scripts\QuestTrigger.cs" />
     <Compile Include="Assets\Scripts\Sound\RandomMusic.cs" />
     <Compile Include="Assets\Scripts\Sound\RandomSounds.cs" />
     <Compile Include="Assets\Scripts\Sound\SoundSave.cs" />

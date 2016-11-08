@@ -8,14 +8,10 @@ public class MainMenuButtons : MonoBehaviour
 
     public void StartGame()
     {
+        ResetGame();
         EnemyManager.Enemies.Clear();
         PlayerStats.IsDead = false;
         SceneManager.LoadSceneAsync("MainScene");
-    }
-
-    public void ContinueGame()
-    {
-        ////TODO 
     }
 
     public void OpenOptions()
@@ -45,13 +41,14 @@ public class MainMenuButtons : MonoBehaviour
 
     private void ResetGame()
     {
+        PlayerStats.IsDead = false;
         PlayerStats.PlayerMoveSpeed = 0.5f;
-        PlayerStats.PlayerHealth = 100;
-        PlayerStats.PlayerMaxHealth = 100;
-        PlayerStats.PlayerCannonBalls = 25;
-        PlayerStats.PlayerMaxCannonBalls = 25;
-        PlayerStats.PlayerGold = 1000;
-        PlayerCannons.maxCannons = 2;
-        PlayerCannons.shotCooldown = 0.5f;
+        PlayerStats.PlayerHealth = 100f;
+        PlayerStats.PlayerMaxHealth = 100f;
+        PlayerStats.PlayerCannonBalls = 25f;
+        PlayerStats.PlayerMaxCannonBalls = 25f;
+        PlayerStats.PlayerGold = 1000f;
+        PlayerCannons.MaxCannons = 2f;
+        PlayerCannons.ShotCooldown = 0.5f;
     }
 }

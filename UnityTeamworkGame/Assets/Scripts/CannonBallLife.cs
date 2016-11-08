@@ -2,7 +2,7 @@
 
 public class CannonBallLife : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Border")
         {

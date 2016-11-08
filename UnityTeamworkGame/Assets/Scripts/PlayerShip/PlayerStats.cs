@@ -6,88 +6,105 @@ public class PlayerStats : MonoBehaviour
 {
     public static bool IsDead;
     public static float PlayerMoveSpeed = 0.5f;
-    public static float PlayerHealth = 100;
-    public static float PlayerMaxHealth = 100;
-    public static float PlayerCannonBalls = 25;
-    public static float PlayerMaxCannonBalls = 25;
-    public static float PlayerGold = 1000;
-    public static float PirateMap = 0;
+    public static float PlayerHealth = 100f;
+    public static float PlayerMaxHealth = 100f;
+    public static float PlayerCannonBalls = 25f;
+    public static float PlayerMaxCannonBalls = 25f;
+    public static float PlayerGold = 1000f;
+    public static float PirateMap = 0f;
+    public static float PlayerDmg = 10f;
     public static bool QuestIsActive;
-    public bool isInShop;
-    private bool TreasureFound;
+    public bool IsInShop;
+    private bool treasureFound;
     public GameObject Crosshair;
     public GameObject Shop;
-    public string currentIsland;
-    public static int questShipsKilledCounter;
+    public string CurrentIsland;
+    public static int QuestShipsKilledCounter;
+    public GameObject DontHitIslandsScreen;
 
     public Animator Animator;
     private AudioSource source;
+    public AudioClip[] HitSounds;
     public AudioClip DieSound;
     public AudioClip HitLand;
-    public AudioClip WelcomeSound;
 
-    void Awake()
+    private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
-        if ((SceneManager.GetActiveScene().buildIndex == 2))
+        PlayerDmg = 10;
+        if ((SceneManager.GetActiveScene().buildIndex == 2f))
         {
-            Crosshair.SetActive(true);
+            this.Crosshair.SetActive(true);
         }
         else
         {
-            Crosshair.SetActive(false);
+            this.Crosshair.SetActive(false);
         }
+
+        PlayerDmg = PlayerDmg- PlayerCannons.MaxCannons + 1;
+        DontHitIslandsScreen.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
         this.source.volume = SoundSave.CurrentSoundEffectsValue;
-        if (PlayerHealth <= 0 && IsDead)
+        if (PlayerHealth <= 0f && IsDead)
         {
             IsDead = true;
             this.source.PlayOneShot(this.DieSound);
-            this.Animator.Play("Explode");
+        }
+
+        if (PlayerHealth <= 0f && SceneManager.GetActiveScene().buildIndex == 1f)
+        {
+            IsDead = true;
+            DontHitIslandsScreen.SetActive(true);
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        currentIsland = col.collider.name;
+        this.CurrentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
         {
-            PlayerHealth -= 5;
+            PlayerHealth -= 5f;
         }
 
         if (col.gameObject.tag == "Terrain")
         {
-            PlayerHealth -= 5;
-            source.PlayOneShot(HitLand);
+            PlayerHealth -= 5f;
+            this.source.PlayOneShot(this.HitLand);
         }
 
         if (col.gameObject.tag == "Dock")
         {
-            Shop.SetActive(true);
-            isInShop = true;
-            this.source.PlayOneShot(this.WelcomeSound);
+            this.Shop.SetActive(true);
+            this.IsInShop = true;
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "PirateCannonBall")
         {
+            RandomHitSounds();
             MonoBehaviour.Destroy(col.gameObject);
-            PlayerHealth -= 10;
+            PlayerHealth -= PirateShip.PirateShipDmg;
         }
 
-        if (col.gameObject.name == "Treasure" && PirateMap == 5 && !TreasureFound)
+        if (col.gameObject.name == "Treasure" && PirateMap == 5f && !this.treasureFound)
         {
-            PlayerGold += 1000;
-            TreasureFound = true;
+            PlayerGold += 1000f;
+            this.treasureFound = true;
         }
+    }
+
+    private void RandomHitSounds()
+    {
+        int rnd = Random.Range(0, this.HitSounds.Length);
+        this.source.PlayOneShot(this.HitSounds[rnd]);
     }
 }

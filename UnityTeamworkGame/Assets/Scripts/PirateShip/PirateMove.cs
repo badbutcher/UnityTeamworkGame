@@ -6,9 +6,11 @@ public class PirateMove : MonoBehaviour
     public GameObject[] Sprites;
     public int CurrentPoint;
     private float maxTurn = 0.5f;
+    public float moveSpeed;
 
     private void Start()
     {
+        this.moveSpeed = PlayerStats.PlayerMoveSpeed + Random.Range(-0.2f, 0.5f);
         this.Reset();
         this.Sprites[0].SetActive(true);
         for (int i = 1; i < this.Points.Length; i++)
@@ -25,10 +27,10 @@ public class PirateMove : MonoBehaviour
     {
         if (!PlayerStats.IsDead)
         {
-            this.transform.position = Vector2.MoveTowards(this.transform.position, this.Points[this.CurrentPoint].transform.position, 0.5f * Time.deltaTime);
+            this.transform.position = Vector2.MoveTowards(this.transform.position, this.Points[this.CurrentPoint].transform.position, moveSpeed * Time.deltaTime);
             if (this.transform.position == this.Points[this.CurrentPoint].transform.position)
             {
-                if (this.CurrentPoint == this.Points.Length - 1)
+                if (this.CurrentPoint == this.Points.Length - 1f)
                 {
                     this.CurrentPoint = 0;
                 }

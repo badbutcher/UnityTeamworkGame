@@ -8,13 +8,13 @@ public class MainMenuParallaxScrolling : MonoBehaviour
 
     private Vector2 startPosition;
 
-    void Start()
+    private void Start()
     {
         this.startPosition = this.transform.position;
         this.TileSizeX = Screen.width;
     }
 
-    void Update()
+    private void Update()
     {
         float newPosition = Mathf.Repeat(Time.time * this.ScrollSpeed, this.TileSizeX);
         this.transform.position = this.startPosition + Vector2.right * newPosition;

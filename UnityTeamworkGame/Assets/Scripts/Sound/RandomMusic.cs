@@ -7,28 +7,24 @@ public class RandomMusic : MonoBehaviour
     private AudioSource source;
     public AudioClip[] Sounds;
 
-    void Awake()
+    private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
-        //if (!(SceneManager.GetActiveScene().buildIndex == 0))
-        //{
-            this.StartCoroutine(this.RandomSound());
-        //}
-
+        this.StartCoroutine(this.RandomSound());
         this.source.volume = SoundSave.CurrentMusicValue;
     }
 
-    IEnumerator RandomSound()
+    private IEnumerator RandomSound()
     {
         while (true)
         {
-            int Rnd = Random.Range(0, this.Sounds.Length);
-            this.source.PlayOneShot(this.Sounds[Rnd]);
-            yield return new WaitForSeconds(240);  
+            int rnd = Random.Range(0, this.Sounds.Length);
+            this.source.PlayOneShot(this.Sounds[rnd]);
+            yield return new WaitForSeconds(240f);
         }
     }
 }
