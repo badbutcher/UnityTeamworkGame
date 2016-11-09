@@ -31,8 +31,7 @@ public class PlayerStats : MonoBehaviour
     public AudioClip HitLand;
 
 
-    public static List<string> Zones = new List<string>();
-    public static string Zones1;
+    
     private int totalZonesFound = 6;
 
     private void Awake()
@@ -56,16 +55,6 @@ public class PlayerStats : MonoBehaviour
         PlayerDmg = PlayerDmg - PlayerCannons.MaxCannons + 1;
         DontHitIslandsScreen.SetActive(false);
 
-        for (int i = totalZonesFound - 1; i >= 0; i--)
-        {
-            Zones.Remove(gameObject.name = Zones[i]);
-        }
-
-
-        //for (int i = 0; i < Zones.Count; i++)
-       // {
-        //    MonoBehaviour.Destroy(GameObject.Find(gameObject.name = Zones[i]));
-        //}
     }
 
     private void Update()
@@ -82,7 +71,6 @@ public class PlayerStats : MonoBehaviour
             IsDead = true;
             DontHitIslandsScreen.SetActive(true);
         }
-        Debug.Log(Zones.Count);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -125,12 +113,8 @@ public class PlayerStats : MonoBehaviour
 
         if (col.gameObject.tag == "Zones")
         {
-
+            IslandManager.Island = col.gameObject.name;
             QuestObject.zonesFound++;
-            if (!Zones.Contains(Zones1))
-            {
-                Zones.Add(Zones1);
-            }
             col.gameObject.SetActive(false);
         }
 
