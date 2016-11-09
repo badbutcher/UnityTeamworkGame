@@ -47,7 +47,7 @@ public class PlayerUI : MonoBehaviour
         if (PlayerStats.QuestShipsKilledCounter == ShopButtons.ShipsToDestroyQuest)
         {
             PlayerStats.QuestShipsKilledCounter = 0;
-            this.CurrentQuest.text = string.Empty;
+           // this.CurrentQuest.text = string.Empty;
             PlayerStats.PlayerGold += ShopButtons.RewardQuest;
             PlayerStats.QuestIsActive = false;
         }

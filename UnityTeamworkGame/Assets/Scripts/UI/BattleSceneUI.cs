@@ -15,10 +15,6 @@ public class BattleSceneUI : MonoBehaviour
     public AudioClip[] Sounds;
     public Text SalvagedItemsText;
 
-//Adding variables for the quests
-    public string enemyQuestName;
-    private QuestManager theQM;
-
     private void Start()
     {
         this.battleWonCheck = false;
@@ -27,7 +23,6 @@ public class BattleSceneUI : MonoBehaviour
         this.BattleLostScreen.SetActive(false);
         this.Source = this.GetComponent<AudioSource>();
         Time.timeScale = 1f;
-        theQM = FindObjectOfType<QuestManager>();
 
     }
 
@@ -41,8 +36,6 @@ public class BattleSceneUI : MonoBehaviour
 
         if (this.PirateShip.PirateShipHealth <= 0f && !this.battleWonCheck)
         {
-            theQM.enemyKilled = enemyQuestName;
-
             if (PlayerStats.QuestIsActive)
             {
                 PlayerStats.QuestShipsKilledCounter++;
@@ -61,6 +54,8 @@ public class BattleSceneUI : MonoBehaviour
 
     private void BattleWon()
     {
+        QuestObject.enemiesKilled++;
+        Debug.Log(QuestObject.enemiesKilled);
         this.battleWonCheck = true;
         this.PirateShip.Source.PlayOneShot(this.PirateShip.DieSound);
         this.PirateShip.Ani.Play("Explode");

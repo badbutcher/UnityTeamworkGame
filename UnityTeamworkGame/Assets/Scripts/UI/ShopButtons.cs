@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class ShopButtons : MonoBehaviour
@@ -26,6 +27,10 @@ public class ShopButtons : MonoBehaviour
     public static int RewardQuest;
     public static int ShipsToDestroyQuest;
 
+    private QuestManager theQM;
+  //  public int questNumber = StartQuest();
+
+
     private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
@@ -33,6 +38,7 @@ public class ShopButtons : MonoBehaviour
 
     private void Start()
     {
+        theQM = FindObjectOfType<QuestManager>();
         this.CurrentMenuText.text = "Welcome";
         this.Reset();
         if (!PlayerStats.QuestIsActive)
@@ -219,13 +225,13 @@ public class ShopButtons : MonoBehaviour
 
     private void QuestTypeDestroyPirateShips()
     {
-        int shipsToDestroy = Random.Range(1, 2);
-        int bonusReward = Random.Range(50, 101);
+        int shipsToDestroy = UnityEngine.Random.Range(1, 2);
+        int bonusReward = UnityEngine.Random.Range(50, 101);
         int reward = (shipsToDestroy * 25) + bonusReward;
         BonusRewardQuest = bonusReward;
         RewardQuest = reward;
         ShipsToDestroyQuest = shipsToDestroy;
-        string text = "Destroy " + shipsToDestroy + " pirate ships for " + reward + "G";
+        string text =  "Destroy " + shipsToDestroy + " pirate ships for " + reward + "G"; //theQM.quests[questNumber].startText;
         this.QuestText.text = text;
     }
 }

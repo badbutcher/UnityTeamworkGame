@@ -50,5 +50,8 @@ public class MainMenuButtons : MonoBehaviour
         PlayerStats.PlayerGold = 1000f;
         PlayerCannons.MaxCannons = 2f;
         PlayerCannons.ShotCooldown = 0.5f;
+        QuestObject.itemsCollected = 0;
+        QuestObject.enemiesKilled = 0;
+        QuestObject.zonesFound = 0;
     }
 }

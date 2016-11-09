@@ -1,56 +1,130 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class QuestObject : MonoBehaviour {
 
-    public int questNumber;
+public class QuestObject : MonoBehaviour
+{
+
     public QuestManager theQM;
-
-    public string startText;
-    public string endText;
 
     public DialogueManager theDM;
 
-    public bool isEnemyQuest;
-    public string targetEnemy;
+    public GameObject QuestPanel;
+    public Text GatherQuest;
+    public Text KillQuest;
+    public Text ZoneQuest;
+    public static int questReward;
+
+    //For Gather Quest
+    public GameObject items;
+    public static int itemsCollected;
+    public int itemsToCollect;
+    private bool collectionQuestComplete = false;
+
+
+
+    //For Kill Quest
+    public static int enemiesKilled;
     public int enemiesToKill;
-    private int enemyKillCount;
+    private bool killQuestComplete = false;
+
+    //For Location Quest
+    public static int zonesFound;
+    public static int zonesToFind;
+    private bool zoneQuestComplete = false;
+
+    
 
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
 
-        if(isEnemyQuest)
+
+    void Start()
+    {
+        zonesToFind = 6;
+
+    }
+
+
+    void Update()
+    {
+
+
+        if (collectionQuestComplete)
         {
-            if(theQM.enemyKilled == targetEnemy)
-            {
-                theQM.enemyKilled = null;
-                enemyKillCount++;
-            }
-
-            if(enemyKillCount >= enemiesToKill)
-            {
-                EndQuest();
-            }
+            GatherQuest.text = "";
         }
-	
-	}
+        else
+        {
+            string text = "You have gathered " + itemsCollected + "/" + itemsToCollect + " chests!";
+            GatherQuest.text = text;
+        }
 
-    public void StartQuest()
-    {
-        theQM.ShowQuestText(startText);
+        if (killQuestComplete)
+        {
+            KillQuest.text = "";
+        }
+        else
+        {
+            string text1 = "You have killed " + enemiesKilled + "/" + enemiesToKill + " pirates!";
+            KillQuest.text = text1;
+        }
+
+        if (zoneQuestComplete)
+        {
+            ZoneQuest.text = "";
+        }
+        else
+        {
+            string text2 = "You have found " + zonesFound + "/" + zonesToFind + " islands!";
+            ZoneQuest.text = text2;
+        }
+
+
+        if (itemsCollected == itemsToCollect)
+        {
+            string endText = "You have collected all chests!";
+            PlayerStats.PlayerGold += 150f;
+            collectionQuestComplete = true;
+            theDM.ShowBox(endText);
+            items.SetActive(false);
+            itemsCollected = 0;
+
+
+        }
+
+        if (enemiesToKill == enemiesKilled)
+        {
+            string endText = "You have killed all pirate ships!";
+            PlayerStats.PlayerGold += 150f;
+            killQuestComplete = true;
+            theDM.ShowBox(endText);
+            enemiesKilled = 0;
+
+
+        }
+
+        if (zonesFound == zonesToFind)
+        {
+            string endText = "You have found all islands!";
+            PlayerStats.PlayerGold += 150f;
+            zoneQuestComplete = true;
+            theDM.ShowBox(endText);
+            zonesFound = 0;
+        }
+
+        if (collectionQuestComplete && killQuestComplete && zoneQuestComplete)
+        {
+            string endText = "Congratulations, you have completed all quests!";
+            theDM.ShowBox(endText);
+            PlayerStats.PlayerGold += 1500f;
+
+        }
+
+
     }
 
-    public void EndQuest()
-    {
-        theDM.dText.text = endText;
-        theQM.ShowQuestText(endText);
-        theQM.questCompleted[questNumber] = true;
-        gameObject.SetActive(false);
-    }
+
+
+
 }

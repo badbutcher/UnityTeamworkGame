@@ -34,6 +34,12 @@ public class DialogueManager : MonoBehaviour {
         dText.text = dialogue;
     }
 
+    public void OnButtonClick()
+    {
+        PlayerStats.PlayerGold = PlayerStats.PlayerGold + QuestObject.questReward;
+        dBox.SetActive(false);
+    }
+
     public void ShowDialogue()
     {
         dialogueActive = true;

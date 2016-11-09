@@ -9,6 +9,8 @@ public class QuestManager : MonoBehaviour {
 
     public DialogueManager theDM;
 
+    public string itemCollected;
+
     public string enemyKilled;
 
 	// Use this for initialization

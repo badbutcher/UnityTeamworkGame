@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class PlayerStats : MonoBehaviour
 {
     public static bool IsDead;
     public static float PlayerMoveSpeed = 0.5f;
-    public static float PlayerHealth = 15;
+    public static float PlayerHealth = 100;
     public static float PlayerMaxHealth = 100f;
     public static float PlayerCannonBalls = 25f;
     public static float PlayerMaxCannonBalls = 25f;
@@ -29,6 +30,11 @@ public class PlayerStats : MonoBehaviour
     public AudioClip DieSound;
     public AudioClip HitLand;
 
+
+    public static List<string> Zones = new List<string>();
+    public static string Zones1;
+    private int totalZonesFound = 6;
+
     private void Awake()
     {
         this.source = this.GetComponent<AudioSource>();
@@ -49,6 +55,17 @@ public class PlayerStats : MonoBehaviour
 
         PlayerDmg = PlayerDmg - PlayerCannons.MaxCannons + 1;
         DontHitIslandsScreen.SetActive(false);
+
+        for (int i = totalZonesFound - 1; i >= 0; i--)
+        {
+            Zones.Remove(gameObject.name = Zones[i]);
+        }
+
+
+        //for (int i = 0; i < Zones.Count; i++)
+       // {
+        //    MonoBehaviour.Destroy(GameObject.Find(gameObject.name = Zones[i]));
+        //}
     }
 
     private void Update()
@@ -65,6 +82,7 @@ public class PlayerStats : MonoBehaviour
             IsDead = true;
             DontHitIslandsScreen.SetActive(true);
         }
+        Debug.Log(Zones.Count);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -98,6 +116,24 @@ public class PlayerStats : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+
+        if(col.gameObject.tag == "TreasureChest")
+        {
+            QuestObject.itemsCollected++;
+            col.gameObject.SetActive(false);
+        }
+
+        if (col.gameObject.tag == "Zones")
+        {
+
+            QuestObject.zonesFound++;
+            if (!Zones.Contains(Zones1))
+            {
+                Zones.Add(Zones1);
+            }
+            col.gameObject.SetActive(false);
+        }
+
         if (col.gameObject.tag == "PirateCannonBall")
         {
             RandomHitSounds();
