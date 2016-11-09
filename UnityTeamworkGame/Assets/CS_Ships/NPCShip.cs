@@ -58,7 +58,7 @@ namespace UnityTeamworkGame.CS_Ships
                     int[] start = new int[2];
                     start[0] = (int)this.X;
                     start[1] = (int)this.Y;
-                    map.GetPathToTarget(start, target, this.path);
+                    //map.GetPathToTarget(start, target, this.path);
                 }
             }
             else if (wasInRange || this.path.Count == 0)
@@ -68,7 +68,7 @@ namespace UnityTeamworkGame.CS_Ships
                 int[] start = new int[2];
                 start[0] = (int)this.X;
                 start[1] = (int)this.Y;
-                map.GetPathToTarget(start, target, this.path);
+                //map.GetPathToTarget(start, target, this.path);
             }
             if (this.path.Count > 0 )
             {

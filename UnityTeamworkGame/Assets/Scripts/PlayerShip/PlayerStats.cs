@@ -6,7 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
     public static bool IsDead;
     public static float PlayerMoveSpeed = 0.5f;
-    public static float PlayerHealth = 100f;
+    public static float PlayerHealth = 15;
     public static float PlayerMaxHealth = 100f;
     public static float PlayerCannonBalls = 25f;
     public static float PlayerMaxCannonBalls = 25f;
@@ -37,6 +37,7 @@ public class PlayerStats : MonoBehaviour
     private void Start()
     {
         PlayerDmg = 10;
+
         if ((SceneManager.GetActiveScene().buildIndex == 2f))
         {
             this.Crosshair.SetActive(true);
@@ -46,9 +47,8 @@ public class PlayerStats : MonoBehaviour
             this.Crosshair.SetActive(false);
         }
 
-        PlayerDmg = PlayerDmg- PlayerCannons.MaxCannons + 1;
+        PlayerDmg = PlayerDmg - PlayerCannons.MaxCannons + 1;
         DontHitIslandsScreen.SetActive(false);
-
     }
 
     private void Update()
@@ -78,7 +78,15 @@ public class PlayerStats : MonoBehaviour
         if (col.gameObject.tag == "Terrain")
         {
             PlayerHealth -= 5f;
-            this.source.PlayOneShot(this.HitLand);
+            
+            if (PlayerHealth > 0)
+            {
+                this.source.PlayOneShot(this.HitLand);
+            }
+            else
+            {
+                SoundSave.CurrentSoundEffectsValue = 0;
+            }
         }
 
         if (col.gameObject.tag == "Dock")

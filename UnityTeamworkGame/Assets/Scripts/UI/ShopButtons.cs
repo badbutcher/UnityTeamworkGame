@@ -108,10 +108,10 @@ public class ShopButtons : MonoBehaviour
 
     public void BuyCannonBalls()
     {
-        if (PlayerStats.PlayerGold >= 50f && PlayerStats.PlayerMaxCannonBalls > PlayerStats.PlayerCannonBalls)
+        if (PlayerStats.PlayerGold >= 10f && PlayerStats.PlayerMaxCannonBalls > PlayerStats.PlayerCannonBalls)
         {
             this.source.PlayOneShot(this.BuySound);
-            PlayerStats.PlayerGold -= 50f;
+            PlayerStats.PlayerGold -= 10f;
             PlayerStats.PlayerCannonBalls++;
         }
     }

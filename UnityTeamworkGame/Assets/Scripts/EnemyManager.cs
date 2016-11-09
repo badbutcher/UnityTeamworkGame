@@ -5,13 +5,13 @@ public class EnemyManager : MonoBehaviour
 {
     public static List<string> Enemies = new List<string>();
     public static string Enemy;
-    private float totalEnemyCount = 5;
+    private int totalEnemyCount = 5;
 
     private void Start()
     {
         if (Enemies.Count >= totalEnemyCount)
         {
-            for (int i = 0; i < totalEnemyCount; i++)
+            for (int i = totalEnemyCount - 1; i >= 0; i--)
             {
                 Enemies.Remove(gameObject.name = Enemies[i]);
             }

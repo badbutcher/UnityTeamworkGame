@@ -16,8 +16,8 @@ public class PirateShip : MonoBehaviour
 
     private void Start()
     {
-        this.PirateShipHealth = PlayerStats.PlayerMaxHealth / 5;
-        PirateShipDmg = Mathf.Floor(PlayerStats.PlayerDmg * 1.25f);
+        this.PirateShipHealth = PlayerStats.PlayerMaxHealth / 4;
+        PirateShipDmg = Mathf.Floor(PlayerStats.PlayerDmg * 1.5f);
     }
 
     private void Update()
@@ -45,7 +45,6 @@ public class PirateShip : MonoBehaviour
             {
                 PirateShipHealth = 0;
             }
-
         }
     }
 

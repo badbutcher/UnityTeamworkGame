@@ -78,8 +78,8 @@ public class BattleSceneUI : MonoBehaviour
 
     private IEnumerator BattleWonScreenShow()
     {
-        int randomGold = Random.Range(25, 300);
-        int randomHealth = Random.Range(5, 20);
+        int randomGold = Random.Range(25, 150);
+        int randomHealth = Random.Range(2, 10);
         int randomCannonBalls = Random.Range(1, 3);
         int randomValue = Random.Range(1, 5);
         yield return new WaitForSeconds(2);

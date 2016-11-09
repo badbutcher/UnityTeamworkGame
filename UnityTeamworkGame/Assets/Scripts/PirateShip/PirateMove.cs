@@ -22,7 +22,7 @@ public class PirateMove : MonoBehaviour
         this.destination = new int[2] { 100, 100 };
         this.X = 1f;
         this.Y = 1f;
-        this.moveSpeed = PlayerStats.PlayerMoveSpeed + Random.Range(-0.2f, 0.5f);
+        this.moveSpeed = PlayerStats.PlayerMoveSpeed + Random.Range(-0.1f, 0.5f);
         this.Reset();
         this.Sprites[0].SetActive(true);
         for (int i = 1; i < this.Points.Length; i++)

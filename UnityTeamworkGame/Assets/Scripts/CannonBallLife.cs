@@ -2,11 +2,8 @@
 
 public class CannonBallLife : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D col)
+    private void Start()
     {
-        if (col.gameObject.tag == "Border")
-        {
-            MonoBehaviour.Destroy(this.gameObject);
-        }
+        Destroy(this.gameObject, 10);
     }
 }

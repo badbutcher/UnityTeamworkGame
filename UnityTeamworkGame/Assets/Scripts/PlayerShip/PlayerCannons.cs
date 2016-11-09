@@ -8,7 +8,7 @@ public class PlayerCannons : MonoBehaviour
     public Rigidbody2D CannonBalls;
     public Transform[] Cannons;
     public float CanShot = 0;
-    public static float ShotCooldown = 0.5f;
+    public static float ShotCooldown = 1.0f;
     public static float MaxCannons = 2f;
     public PlayerStats PlayerStats;
     public ParticleSystem shotEffect;
