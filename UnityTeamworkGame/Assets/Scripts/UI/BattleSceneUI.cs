@@ -36,11 +36,6 @@ public class BattleSceneUI : MonoBehaviour
 
         if (this.PirateShip.PirateShipHealth <= 0f && !this.battleWonCheck)
         {
-            if (PlayerStats.QuestIsActive)
-            {
-                PlayerStats.QuestShipsKilledCounter++;
-            }
-
             this.BattleWon();
         }
     }
@@ -55,7 +50,6 @@ public class BattleSceneUI : MonoBehaviour
     private void BattleWon()
     {
         QuestObject.enemiesKilled++;
-        Debug.Log(QuestObject.enemiesKilled);
         this.battleWonCheck = true;
         this.PirateShip.Source.PlayOneShot(this.PirateShip.DieSound);
         this.PirateShip.Ani.Play("Explode");

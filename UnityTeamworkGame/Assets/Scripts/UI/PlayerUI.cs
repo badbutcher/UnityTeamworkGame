@@ -37,20 +37,6 @@ public class PlayerUI : MonoBehaviour
         this.PlayerGoldText.text = PlayerStats.PlayerGold.ToString();
         this.PlayerHpText.text = PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
         this.PlayerCannonBallsText.text = PlayerStats.PlayerCannonBalls + " / " + PlayerStats.PlayerMaxCannonBalls;
-        if (PlayerStats.QuestIsActive)
-        {
-            CurrentQuest.text = "Desotroy " + ShopButtons.ShipsToDestroyQuest +
-                " pirate ships for " + ShopButtons.RewardQuest +
-                "G (" + PlayerStats.QuestShipsKilledCounter + "/" + ShopButtons.ShipsToDestroyQuest + ")";
-        }
-
-        if (PlayerStats.QuestShipsKilledCounter == ShopButtons.ShipsToDestroyQuest)
-        {
-            PlayerStats.QuestShipsKilledCounter = 0;
-           // this.CurrentQuest.text = string.Empty;
-            PlayerStats.PlayerGold += ShopButtons.RewardQuest;
-            PlayerStats.QuestIsActive = false;
-        }
     }
 
     public void ShowQuests()

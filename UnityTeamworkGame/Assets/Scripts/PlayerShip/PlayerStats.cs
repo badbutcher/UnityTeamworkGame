@@ -19,8 +19,6 @@ public class PlayerStats : MonoBehaviour
     private bool treasureFound;
     public GameObject Crosshair;
     public GameObject Shop;
-    public string CurrentIsland;
-    public static int QuestShipsKilledCounter;
     public GameObject DontHitIslandsScreen;
 
 
@@ -75,7 +73,6 @@ public class PlayerStats : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        this.CurrentIsland = col.collider.name;
         if (col.gameObject.tag == "PirateShipBattle")
         {
             PlayerHealth -= 5f;

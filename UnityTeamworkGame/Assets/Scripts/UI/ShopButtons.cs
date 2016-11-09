@@ -206,15 +206,6 @@ public class ShopButtons : MonoBehaviour
         }
     }
 
-    public void GetQuest()
-    {
-        if (!PlayerStats.QuestIsActive)
-        {
-            PlayerStats.QuestShipsKilledCounter = 0;
-            PlayerStats.QuestIsActive = true;
-        }
-    }
-
     private void FixHealth()
     {
         if (PlayerStats.PlayerHealth > PlayerStats.PlayerMaxHealth)

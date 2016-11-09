@@ -13,18 +13,15 @@ public class DialogueManager : MonoBehaviour {
     public int currentLine;
 
 
-	// Use this for initialization
 	void Start () {
 	
 	}
 	
-	// Update is called once per frame
 	void Update () {
         if(currentLine >= dialogueLines.Length)
         {
             currentLine = 0;
         }
-       // dText.text = dialogueLines[currentLine];
 	}
 
     public void ShowBox(string dialogue)
