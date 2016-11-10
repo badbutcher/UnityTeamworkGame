@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour {
-
+public class DialogueManager : MonoBehaviour
+{
     public GameObject dBox;
     public Text dText;
 
@@ -12,17 +11,13 @@ public class DialogueManager : MonoBehaviour {
     public string[] dialogueLines;
     public int currentLine;
 
-
-	void Start () {
-	
-	}
-	
-	void Update () {
-        if(currentLine >= dialogueLines.Length)
+    void Update()
+    {
+        if (currentLine >= dialogueLines.Length)
         {
             currentLine = 0;
         }
-	}
+    }
 
     public void ShowBox(string dialogue)
     {

@@ -23,17 +23,17 @@ public class PlayerUI : MonoBehaviour
         this.MapPanel.SetActive(false);
         if ((SceneManager.GetActiveScene().buildIndex == 2f))
         {
-            EnemyHealth.SetActive(true);
+            this.EnemyHealth.SetActive(true);
         }
         else
         {
-            EnemyHealth.SetActive(false);
+            this.EnemyHealth.SetActive(false);
         }
     }
 
     private void Update()
     {
-        EnemyHealthText.text = PirateShip.PirateShipHealth.ToString();
+        this.EnemyHealthText.text = PirateShip.PirateShipHealth.ToString();
         this.PlayerGoldText.text = PlayerStats.PlayerGold.ToString();
         this.PlayerHpText.text = PlayerStats.PlayerHealth + " / " + PlayerStats.PlayerMaxHealth;
         this.PlayerCannonBallsText.text = PlayerStats.PlayerCannonBalls + " / " + PlayerStats.PlayerMaxCannonBalls;

@@ -8,7 +8,7 @@ public class MainMenuButtons : MonoBehaviour
 
     public void StartGame()
     {
-        ResetGame();
+        this.ResetGame();
         EnemyManager.Enemies.Clear();
         PlayerStats.IsDead = false;
         SceneManager.LoadSceneAsync("MainScene");

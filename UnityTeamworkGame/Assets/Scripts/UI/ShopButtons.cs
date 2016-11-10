@@ -28,8 +28,6 @@ public class ShopButtons : MonoBehaviour
     public static int ShipsToDestroyQuest;
 
     private QuestManager theQM;
-  //  public int questNumber = StartQuest();
-
 
     private void Awake()
     {
@@ -148,7 +146,7 @@ public class ShopButtons : MonoBehaviour
         {
             this.source.PlayOneShot(this.BuySound);
             PlayerStats.PlayerGold -= 100f;
-            PlayerStats.PlayerMoveSpeed += 0.5f;
+            PlayerStats.PlayerMoveSpeed += 0.2f;
         }
     }
 
@@ -222,7 +220,7 @@ public class ShopButtons : MonoBehaviour
         BonusRewardQuest = bonusReward;
         RewardQuest = reward;
         ShipsToDestroyQuest = shipsToDestroy;
-        string text =  "Destroy " + shipsToDestroy + " pirate ships for " + reward + "G"; //theQM.quests[questNumber].startText;
+        string text = "Destroy " + shipsToDestroy + " pirate ships for " + reward + "G";
         this.QuestText.text = text;
     }
 }

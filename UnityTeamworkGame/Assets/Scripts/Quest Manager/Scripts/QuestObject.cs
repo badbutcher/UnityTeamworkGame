@@ -1,11 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
-
 
 public class QuestObject : MonoBehaviour
 {
-
     public QuestManager theQM;
 
     public DialogueManager theDM;
@@ -16,40 +13,29 @@ public class QuestObject : MonoBehaviour
     public Text ZoneQuest;
     public static int questReward;
 
-    //For Gather Quest
+    ////For Gather Quest
     public GameObject items;
     public static int itemsCollected;
     public int itemsToCollect;
     private bool collectionQuestComplete = false;
 
-
-
-    //For Kill Quest
+    ////For Kill Quest
     public static int enemiesKilled;
     public int enemiesToKill;
     private bool killQuestComplete = false;
 
-    //For Location Quest
+    ////For Location Quest
     public static int zonesFound;
     public static int zonesToFind;
     private bool zoneQuestComplete = false;
 
-    
-
-
-
-
     void Start()
     {
         zonesToFind = 6;
-
     }
 
-
     void Update()
-    {
-
-
+    { 
         if (collectionQuestComplete)
         {
             GatherQuest.text = "";
@@ -80,7 +66,6 @@ public class QuestObject : MonoBehaviour
             ZoneQuest.text = text2;
         }
 
-
         if (itemsCollected == itemsToCollect)
         {
             string endText = "You have collected all chests!";
@@ -89,8 +74,6 @@ public class QuestObject : MonoBehaviour
             theDM.ShowBox(endText);
             items.SetActive(false);
             itemsCollected = 0;
-
-
         }
 
         if (enemiesToKill == enemiesKilled)
@@ -100,8 +83,6 @@ public class QuestObject : MonoBehaviour
             killQuestComplete = true;
             theDM.ShowBox(endText);
             enemiesKilled = 0;
-
-
         }
 
         if (zonesFound == zonesToFind)
@@ -118,13 +99,6 @@ public class QuestObject : MonoBehaviour
             string endText = "Congratulations, you have completed all quests!";
             theDM.ShowBox(endText);
             PlayerStats.PlayerGold += 1500f;
-
         }
-
-
     }
-
-
-
-
 }

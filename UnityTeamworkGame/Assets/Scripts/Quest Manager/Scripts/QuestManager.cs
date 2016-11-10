@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-
-public class QuestManager : MonoBehaviour {
-
+public class QuestManager : MonoBehaviour
+{
     public QuestObject[] quests;
     public bool[] questCompleted;
 
@@ -13,16 +11,10 @@ public class QuestManager : MonoBehaviour {
 
     public string enemyKilled;
 
-	// Use this for initialization
-	void Start ()
+    void Start()
     {
         questCompleted = new bool[quests.Length];
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 
     public void ShowQuestText(string questText)
     {

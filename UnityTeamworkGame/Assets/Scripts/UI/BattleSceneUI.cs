@@ -23,7 +23,6 @@ public class BattleSceneUI : MonoBehaviour
         this.BattleLostScreen.SetActive(false);
         this.Source = this.GetComponent<AudioSource>();
         Time.timeScale = 1f;
-
     }
 
     private void Update()

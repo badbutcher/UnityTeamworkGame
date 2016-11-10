@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityTeamworkGame.CS_Common;
+using UnityEngine.SceneManagement;
 
 public class PirateMove : MonoBehaviour
 {
@@ -25,13 +26,19 @@ public class PirateMove : MonoBehaviour
         this.moveSpeed = PlayerStats.PlayerMoveSpeed + Random.Range(-0.1f, 0.5f);
         this.Reset();
         this.Sprites[0].SetActive(true);
-        for (int i = 1; i < this.Points.Length; i++)
+        if ((SceneManager.GetActiveScene().buildIndex == 2f))
         {
-            this.Points[i] = GameObject.Find("Point" + Random.Range(2, 16));
-        }
+            for (int i = 1; i < this.Points.Length; i++)
+            {
+                this.Points[i] = GameObject.Find("Point" + Random.Range(2, 16));
+            }
 
-        this.Points[0] = GameObject.Find("Point1");
-        this.Points[9] = GameObject.Find("Point15");
+            this.Points[0] = GameObject.Find("Point1");
+            this.Points[9] = GameObject.Find("Point15");
+        }
+        
+
+        
         this.gameObject.transform.position = this.Points[0].transform.position;
     }
 
@@ -101,7 +108,7 @@ public class PirateMove : MonoBehaviour
         this.Sprites[7].SetActive(false);
     }
 
-    // Ship movement 
+    //// Ship movement 
 
     private void GetNextPointPosition(bool playerHasMoved, out float[] nextPositionCoords)
     {
@@ -111,11 +118,11 @@ public class PirateMove : MonoBehaviour
         CheckInRange(PlayerMove.X, PlayerMove.Y);
         if (this.isInRange)
         {
-            target = Map.ConvertLocationToCoord(new float[2] {PlayerMove.X, PlayerMove.Y});
-            if (this.path.Count == 0 || playerHasMoved)  
+            target = Map.ConvertLocationToCoord(new float[2] { PlayerMove.X, PlayerMove.Y });
+            if (this.path.Count == 0 || playerHasMoved)
             {
                 int[] start = new int[2];
-                start = Map.ConvertLocationToCoord(new float[2] { this.X, this.Y});
+                start = Map.ConvertLocationToCoord(new float[2] { this.X, this.Y });
                 Map.GetPathToTarget(start, target, out this.path);
             }
         }
@@ -127,6 +134,7 @@ public class PirateMove : MonoBehaviour
             start = Map.ConvertLocationToCoord(new float[2] { this.X, this.Y });
             Map.GetPathToTarget(start, target, out this.path);
         }
+
         if (this.path.Count > 0)
         {
             nextPositionCoords[0] = this.path[0][0];

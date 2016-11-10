@@ -42,7 +42,6 @@ public class PirateCannon : MonoBehaviour
     }
 
     private IEnumerator StopShotEffect()
-
     {
         shotEffect.Play();
         yield return new WaitForSeconds(0.1f);

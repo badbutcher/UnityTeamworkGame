@@ -5,7 +5,7 @@ public class EnemyManager : MonoBehaviour
 {
     public static List<string> Enemies = new List<string>();
     public static string Enemy;
-    private int totalEnemyCount = 5;
+    private int totalEnemyCount = 16;
 
     private void Start()
     {

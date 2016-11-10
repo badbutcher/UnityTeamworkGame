@@ -21,15 +21,12 @@ public class PlayerStats : MonoBehaviour
     public GameObject Shop;
     public GameObject DontHitIslandsScreen;
 
-
     public Animator Animator;
     private AudioSource source;
     public AudioClip[] HitSounds;
     public AudioClip DieSound;
     public AudioClip HitLand;
 
-
-    
     private int totalZonesFound = 6;
 
     private void Awake()
@@ -52,7 +49,6 @@ public class PlayerStats : MonoBehaviour
 
         PlayerDmg = PlayerDmg - PlayerCannons.MaxCannons + 1;
         DontHitIslandsScreen.SetActive(false);
-
     }
 
     private void Update()
@@ -81,7 +77,7 @@ public class PlayerStats : MonoBehaviour
         if (col.gameObject.tag == "Terrain")
         {
             PlayerHealth -= 5f;
-            
+
             if (PlayerHealth > 0)
             {
                 this.source.PlayOneShot(this.HitLand);
@@ -101,8 +97,7 @@ public class PlayerStats : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-
-        if(col.gameObject.tag == "TreasureChest")
+        if (col.gameObject.tag == "TreasureChest")
         {
             QuestObject.itemsCollected++;
             col.gameObject.SetActive(false);
