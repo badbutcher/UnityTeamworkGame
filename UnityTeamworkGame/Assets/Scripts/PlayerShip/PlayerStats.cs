@@ -7,10 +7,10 @@ public class PlayerStats : MonoBehaviour
 {
     public static bool IsDead;
     public static float PlayerMoveSpeed = 0.5f;
-    public static float PlayerHealth = 100;
+    public static float PlayerHealth = 100f;
     public static float PlayerMaxHealth = 100f;
-    public static float PlayerCannonBalls = 25f;
-    public static float PlayerMaxCannonBalls = 25f;
+    public static float PlayerCannonBalls = 50f;
+    public static float PlayerMaxCannonBalls = 50f;
     public static float PlayerGold = 1000f;
     public static float PirateMap = 0f;
     public static float PlayerDmg = 10f;

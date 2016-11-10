@@ -11,7 +11,6 @@ public class ShopButtons : MonoBehaviour
     public GameObject WeaponsPanel;
     public GameObject UpdatePanel;
     public GameObject RepairShipPanel;
-    public GameObject QuestPanel;
     public GameObject ExitShop;
     private AudioSource source;
     public AudioClip BuySound;
@@ -21,11 +20,6 @@ public class ShopButtons : MonoBehaviour
     public Text BuyMoreCannonsText;
     public Text BuyCannonsReloadSpeedText;
     public Text ImproveSpeedText;
-    public Text QuestText;
-
-    public static int BonusRewardQuest;
-    public static int RewardQuest;
-    public static int ShipsToDestroyQuest;
 
     private QuestManager theQM;
 
@@ -39,10 +33,6 @@ public class ShopButtons : MonoBehaviour
         theQM = FindObjectOfType<QuestManager>();
         this.CurrentMenuText.text = "Welcome";
         this.Reset();
-        if (!PlayerStats.QuestIsActive)
-        {
-            this.QuestTypeDestroyPirateShips();
-        }
     }
 
     private void Update()
@@ -88,13 +78,6 @@ public class ShopButtons : MonoBehaviour
         this.RepairShipPanel.SetActive(true);
     }
 
-    public void ShowQuest()
-    {
-        this.CurrentMenuText.text = "Tavern";
-        this.Reset();
-        this.QuestPanel.SetActive(true);
-    }
-
     public void Exit()
     {
         this.PlayerStats.IsInShop = false;
@@ -106,7 +89,6 @@ public class ShopButtons : MonoBehaviour
     {
         this.WeaponsPanel.SetActive(false);
         this.UpdatePanel.SetActive(false);
-        this.QuestPanel.SetActive(false);
         this.RepairShipPanel.SetActive(false);
     }
 
@@ -210,17 +192,5 @@ public class ShopButtons : MonoBehaviour
         {
             PlayerStats.PlayerHealth = PlayerStats.PlayerMaxHealth;
         }
-    }
-
-    private void QuestTypeDestroyPirateShips()
-    {
-        int shipsToDestroy = UnityEngine.Random.Range(1, 2);
-        int bonusReward = UnityEngine.Random.Range(50, 101);
-        int reward = (shipsToDestroy * 25) + bonusReward;
-        BonusRewardQuest = bonusReward;
-        RewardQuest = reward;
-        ShipsToDestroyQuest = shipsToDestroy;
-        string text = "Destroy " + shipsToDestroy + " pirate ships for " + reward + "G";
-        this.QuestText.text = text;
     }
 }

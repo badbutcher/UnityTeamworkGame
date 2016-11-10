@@ -45,8 +45,8 @@ public class MainMenuButtons : MonoBehaviour
         PlayerStats.PlayerMoveSpeed = 0.5f;
         PlayerStats.PlayerHealth = 100f;
         PlayerStats.PlayerMaxHealth = 100f;
-        PlayerStats.PlayerCannonBalls = 25f;
-        PlayerStats.PlayerMaxCannonBalls = 25f;
+        PlayerStats.PlayerCannonBalls = 50f;
+        PlayerStats.PlayerMaxCannonBalls = 50f;
         PlayerStats.PlayerGold = 1000f;
         PlayerCannons.MaxCannons = 2f;
         PlayerCannons.ShotCooldown = 0.5f;
